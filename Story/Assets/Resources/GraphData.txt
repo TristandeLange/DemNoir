@@ -1,0 +1,101 @@
+﻿0 id
+{The following questions will help determine the kind of person you come to know yourself as in the coming months, answer as honestly as you can, and a House of Arcana will be given to you at the end.} Power comes from...            Choose one:
+Personal Power
+> What you know
+> Who you know
+> What you have
+> Who you are
+> ( skip ) I know my House Arcana...
+No Info 
+1 id
+1 id 
+Mind + 2 Strength - 1 Sneakiness - 1 Heart - 1 endline 
+No Info 
+1 id
+Mind - 1 Strength - 1 Sneakiness - 1 Heart + 2 endline 
+No Info 
+1 id 
+Mind - 1 Strength - 1 Sneakiness + 2 Heart - 1 endline 
+No Info 
+1 id 
+Mind - 1 Strength + 2 Sneakiness - 1 Heart - 1 endline 
+No Info 
+3 id 
+No Info 
+No Info 
+1 id   
+I seem to have a natural talent for...      Choose one: 
+Personal Skills 
+> Winning inside the Fighting Pits 
+> Witty Parlor Banter 
+> Lockpicking and Pickpocketing Drunks  
+> Studying the Demoni Infernal Texts 
+No Info 
+0 
+2 
+2 
+Strength + 1  endline 
+No Info 
+2 
+Heart + 1  endline 
+No Info 
+2 
+Sneakiness + 1  endline 
+No Info 
+2 
+Mind + 1  endline 
+No Info 
+No Info 
+No Info 
+No Info 
+2 
+It's better to confront your enemies...      Choose one: 
+Confrontation 
+> Head on, with good ol' fistacuffs 
+> With a spot of tea and conversation, we can hash it out 
+> Factually, in a well-structured argument. As long as it's obvious that I am correct 
+> With quiet scheming...everyone has to sleep sometime 
+No Info 
+1 
+3 
+3 
+Strength + 2  endline 
+No Info 
+3 
+Heart + 2  endline 
+No Info 
+3 
+Mind + 2  endline 
+No Info 
+3 
+Sneakiness + 2  endline 
+No Info 
+No Info 
+No Info 
+No Info 
+3 
+BULLSHITTT  
+Confrontation 
+> Head o 
+> With  
+> Factually, in a well-structured argumen 
+> With quiet  
+No Info 
+2 
+4 
+4 
+Strength + 2  endline 
+No Info 
+4 
+Heart + 2  endline 
+No Info 
+4 
+Mind + 2  endline 
+No Info 
+4 
+Sneakiness + 2  endline 
+No Info 
+No Info 
+No Info 
+No Info 
+endgame
