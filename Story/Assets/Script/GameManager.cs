@@ -12,6 +12,7 @@ using JetBrains.Annotations;
 using Newtonsoft.Json;
 using System.Linq;
 using static Node;
+using Unity.VisualScripting;
 //using static JSONWrite;
 
 public class GameManager : MonoBehaviour
@@ -32,13 +33,19 @@ public class GameManager : MonoBehaviour
     private Node c3;
     private Node c4;
 
+    public string c0ID;
+    public string c1ID;
+    public string c2ID;
+    public string c3ID;
+    public string c4ID;
+
     public UnityEngine.UI.Button Btn0;
     public UnityEngine.UI.Button Btn1;
     public UnityEngine.UI.Button Btn2;
     public UnityEngine.UI.Button Btn3;
     public UnityEngine.UI.Button Btn4;
 
-
+    //public Queue UnpoppedNodes; Not actually useful yet.
     //public TextAsset graphData;
 
     // Start is called before the first frame update
@@ -54,10 +61,15 @@ public class GameManager : MonoBehaviour
         Btn3.onClick.AddListener(TaskOnClick3);
         Btn4.onClick.AddListener(TaskOnClick4);
 
+        InitializeGame();
+    }
+
+    public void InitializeGame() 
+    {
         rootNode = new Node(0);
         focusNode = rootNode;
         AssembleGraph();
-        SaveData loadedData = loadJSON();
+        SaveData loadedData = LoadJSON();
         playerObject.GetComponent<JSONWrite>().myPlayer.mind = loadedData.mind;
         playerObject.GetComponent<JSONWrite>().myPlayer.heart = loadedData.heart;
         playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness = loadedData.sneakiness;
@@ -69,21 +81,24 @@ public class GameManager : MonoBehaviour
     void TaskOnClick0()
     {
         //PrintNode(focusNode);
+        //Debug.Log(focusNode.Defnext.Id);
         Node nextnode = SearchByID(c0.Id);
-        if (focusNode != null || focusNode.C0.statChanges != null)
+        if (Btn0.interactable != false || focusNode.C0[3] != null || focusNode.C0[3] != "")
         {
-            statUpdate(focusNode.C0.statChanges);
+
+            StatUpdate(focusNode.C0[3]);
         }
         focusNode = nextnode;
-        //PrintNode(focusNode);
         UpdateFromNode(nextnode);
+        
     }
     void TaskOnClick1() 
     {
+        Debug.Log(c1.Id);
         Node nextnode = SearchByID(c1.Id);
-        if (focusNode.C1.statChanges != null)
+        if (Btn1.interactable != false || focusNode.C1[3] != "Null" || focusNode.C1[3] != "")
         {
-            statUpdate(focusNode.C1.statChanges);
+            StatUpdate(focusNode.C1[3]);
         }
         focusNode = nextnode;
         UpdateFromNode(nextnode);
@@ -91,9 +106,9 @@ public class GameManager : MonoBehaviour
     void TaskOnClick2() 
     {
         Node nextnode = SearchByID(c2.Id);
-        if (focusNode.C2.statChanges != null)
+        if (Btn2.interactable != false || focusNode.C2[3] != null || focusNode.C2[3] != "")
         {
-            statUpdate(focusNode.C2.statChanges);
+            StatUpdate(focusNode.C2[3]);
         }
         focusNode = nextnode;
         UpdateFromNode(nextnode);
@@ -101,9 +116,9 @@ public class GameManager : MonoBehaviour
     void TaskOnClick3() 
     {
         Node nextnode = SearchByID(c3.Id);
-        if (focusNode.C3.statChanges != null)
+        if (Btn3.interactable != false || focusNode.C3[3] != null || focusNode.C3[3] != "")
         {
-            statUpdate(focusNode.C3.statChanges);
+            StatUpdate(focusNode.C3[3]);
         }
         focusNode = nextnode;
         UpdateFromNode(nextnode);
@@ -111,14 +126,16 @@ public class GameManager : MonoBehaviour
     void TaskOnClick4() 
     {
         Node nextnode = SearchByID(c4.Id);
-        if (focusNode.C4.statChanges != null)
+        if (Btn4.interactable != false || focusNode.C4[3] != null || focusNode.C4[3] != "")
         {
-            statUpdate(focusNode.C4.statChanges);
+            StatUpdate(focusNode.C4[3]);
         }
         focusNode = nextnode;
         UpdateFromNode(nextnode);
     }
 
+    //updates the interface with whatever Node we're going to based off the previous choice made.
+    //checks the validity of each choice node as well. 
     private void UpdateFromNode(Node node) 
     {
         title.text = node.Title;
@@ -126,28 +143,39 @@ public class GameManager : MonoBehaviour
 
         if (node.C0 != null)
         {
-            c0s.text = node.C0.text;
-            c0 = node.C0.node;
+            c0ID = node.C0[1];
+            c0s.text = node.C0[0];
+            Int32.TryParse(node.C0[1], out int id);
+            c0 = SearchByID(id);
+
         }
         if (node.C1 != null)
         {
-            c1s.text = node.C1.text;
-            c1 = node.C1.node;
+            c1ID = node.C1[1];
+            c1s.text = node.C1[0];
+            Int32.TryParse(node.C1[1], out int id);
+            c1 = SearchByID(id);
         }
         if (node.C2 != null)
         {
-            c2s.text = node.C2.text;
-            c2 = node.C2.node;
+            c2ID = node.C2[1];
+            c2s.text = node.C2[0];
+            Int32.TryParse(node.C2[1], out int id);
+            c2 = SearchByID(id);
         }
         if (node.C3 != null)
         {
-            c3s.text = node.C3.text;
-            c3 = node.C3.node;
+            c3ID = node.C3[1];
+            c3s.text = node.C3[0];
+            Int32.TryParse(node.C3[1], out int id);
+            c3 = SearchByID(id);
         }
         if (node.C4 != null)
         {
-            c4s.text = node.C4.text;
-            c4 = node.C4.node;
+            c4ID = node.C4[1];
+            c4s.text = node.C4[0];
+            Int32.TryParse(node.C4[1], out int id);
+            c4 = SearchByID(id);
         }
         Btn0.interactable = true;
         Btn1.interactable = true;
@@ -169,27 +197,27 @@ public class GameManager : MonoBehaviour
         Node focus;
 
         focus = parentNode;
-        if (focus == null || focus.C0 == null || !statRestrictCheck(focus.C0.statRestrictions))
+        if (focus == null || focus.C0 == null || focus.C0[0] == null || !StatRestrictCheck(focus.C0[2]))
         {
             Btn0.interactable = false;
             c0s.text = " ";
         }
-        if (focus == null || focus.C1 == null || !statRestrictCheck(focus.C1.statRestrictions)) 
+        if (focus == null || focus.C1 == null || focus.C1[0] == null || !StatRestrictCheck(focus.C1[2])) 
         {   
             Btn1.interactable = false;
             c1s.text = " ";
         }
-        if (focus == null || focus.C2 == null || !statRestrictCheck(focus.C2.statRestrictions))
+        if (focus == null || focus.C2 == null || focus.C2[0] == null || !StatRestrictCheck(focus.C2[2]))
         {
             Btn2.interactable = false;
             c2s.text = " ";
         }
-        if (focus == null || focus.C3 == null || !statRestrictCheck(focus.C3.statRestrictions))
+        if (focus == null || focus.C3 == null || focus.C3[0] == null || !StatRestrictCheck(focus.C3[2]))
         {
             Btn3.interactable = false;
             c3s.text = " ";
         }
-        if (focus == null || focus.C4 == null || !statRestrictCheck(focus.C4.statRestrictions))
+        if (focus == null || focus.C4 == null || focus.C4[0] == null || !StatRestrictCheck(focus.C4[2]))
         {
             Btn4.interactable = false;
             c4s.text = " ";
@@ -197,7 +225,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Need to change things hereeeeee
+    //Assembles the tree of choices based off GraphData
     private void AssembleGraph()
     {
         
@@ -211,22 +239,15 @@ public class GameManager : MonoBehaviour
             using (StreamReader sr = new StreamReader(filepath))
             {
                 //int i = 0;
-                while ((line = sr.ReadLine()) != "endgame")
+                while ((line = sr.ReadLine()) != "endgame" || line == null)
                 {
                     
-                    Debug.Log(line);
-                    /**
                     line = line.Trim();
                     Int32.TryParse(line, out int id); //sets id from file
                     if ((focus = SearchByID(id)) == null) //checks if the node already exists and if it does, sets it, or makes it a new node.
                     {
                         focus = new Node(id);
                     }
-                    focus.C0 = new Choice();
-                    focus.C1 = new Choice();
-                    focus.C2 = new Choice();
-                    focus.C3 = new Choice();
-                    focus.C4 = new Choice();
 
                     // Obsolete Version
                     //line = sr.ReadLine();   //reads statRestrict
@@ -246,23 +267,23 @@ public class GameManager : MonoBehaviour
 
                     line = sr.ReadLine();   //reads C0s
                     line = line.Trim();
-                    focus.C0.text = StringNullCheck(line);
+                    focus.C0[0] = StringNullCheck(line);
 
                     line = sr.ReadLine();   //reads C1s
                     line = line.Trim();
-                    focus.C1.text = StringNullCheck(line);
+                    focus.C1[0] = StringNullCheck(line);
 
                     line = sr.ReadLine();   //reads C2s
                     line = line.Trim();
-                    focus.C2.text = StringNullCheck(line);
+                    focus.C2[0] = StringNullCheck(line);
 
                     line = sr.ReadLine();   //reads C3s
                     line = line.Trim();
-                    focus.C3.text = StringNullCheck(line);
+                    focus.C3[0] = StringNullCheck(line);
 
                     line = sr.ReadLine();   //reads C4s
                     line = line.Trim();
-                    focus.C4.text = StringNullCheck(line);
+                    focus.C4[0] = StringNullCheck(line);
 
                     //works properly up to this point, no stall or crash
                     
@@ -297,14 +318,16 @@ public class GameManager : MonoBehaviour
                         }
                         else
                         {
-                            focus.Defnext = new Node(id);
+                            focus.Defnext = new Node(id);   //adds a new node to the tree (through defnext)
                         }
                     }
                     else
                     {
                         focus.Defnext = null;  //there is no defnext so set it to null
                     }
-                    
+
+                    //old stuff
+                    /**
                     //checks and sets c0
                     line = sr.ReadLine();
                     line = line.Trim();
@@ -313,11 +336,11 @@ public class GameManager : MonoBehaviour
                         Int32.TryParse(line, out id);   //change string to int
                         if ((temp = SearchByID(id)) != null)    //if node with id exists, set temp to it
                         {
-                            focus.C0.node = temp;
+                            focus.C0[1] = temp;
                         }
                         else
                         {
-                            focus.C0.node = new Node(id);
+                            focus.C0[ = new Node(id);
                         }
                     }
                     else
@@ -522,9 +545,179 @@ public class GameManager : MonoBehaviour
                         focus.C4.statRestrictions = null; 
                     }
                     **/
-                    //Debug.Log(line);
-                    //i++;
-                    //Debug.Log("finishes the loop " + i + " times");
+
+                    //checks and sets c0 node id -----------------------------------------------------------------------------------------------------
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C0[1] = line;
+                  
+                    }
+                    else
+                    {
+                        focus.C0[1] = null;
+                    }
+                    //checks and sets c0 stat changes
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C0[3] = line;
+                    }
+                    else
+                    {
+                        focus.C0[3] = null;
+                    }
+                    //checks and sets c0 stat restrictioms
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C0[2] = line;
+                    }
+                    else
+                    {
+                        focus.C0[2] = null;
+                    }
+
+                    //checks and sets c1 node id
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C1[1] = line;
+                    }
+                    else
+                    {
+                        focus.C1[1] = null;
+                    }
+                    //checks and sets c1 stat changes
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C1[3] = line;
+                    }
+                    else
+                    {
+                        focus.C1[3] = null;
+                    }
+                    //checks and sets c1 stat restrictioms
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C1[2] = line;
+                    }
+                    else
+                    {
+                        focus.C1[2] = null;
+                    }
+
+                    //checks and sets c2 node id
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C2[1] = line;
+                    }
+                    else
+                    {
+                        focus.C2[1] = null;
+                    }
+                    //checks and sets c2 stat changes
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C2[3] = line;
+                    }
+                    else
+                    {
+                        focus.C2[3] = null;
+                    }
+                    //checks and sets c2 stat restrictioms
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C2[2] = line;
+                    }
+                    else
+                    {
+                        focus.C2[2] = null;
+                    }
+
+                    //checks and sets c3 node id
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C3[1] = line;
+                    }
+                    else
+                    {
+                        focus.C3[1] = null;
+                    }
+                    //checks and sets c3 stat changes
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C3[3] = line;
+                    }
+                    else
+                    {
+                        focus.C3[3] = null;
+                    }
+                    //checks and sets c3 stat restrictioms
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C3[2] = line;
+                    }
+                    else
+                    {
+                        focus.C3[2] = null;
+                    }
+
+                    //checks and sets c4 node id
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C4[1] = line;
+                    }
+                    else
+                    {
+                        focus.C4[1] = null;
+                    }
+                    //checks and sets c4 stat changes
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C4[3] = line;
+                    }
+                    else
+                    {
+                        focus.C4[3] = null;
+                    }
+                    //checks and sets c4 stat restrictioms
+                    line = sr.ReadLine();
+                    line = line.Trim();
+                    if (StringNullCheck(line) != null)
+                    {
+                        focus.C4[2] = line;
+                    }
+                    else
+                    {
+                        focus.C4[2] = null;
+                    }
+
+
                 }
                 sr.Close();
             }
@@ -554,13 +747,14 @@ public class GameManager : MonoBehaviour
             focus = focus.Defnext;
         } while (focus != null);
 
+        //Debug.Log("Its returning Null");
         return null;
     }
 
     //checks if the given string says "Null" or doesn't have any contents
     public string StringNullCheck(string text) 
     {
-        if(text == "Null" || text == "") 
+        if(text == "Null" || text == "" || text == "null" || text == "Null ") 
         {
             return null;
         }
@@ -568,9 +762,9 @@ public class GameManager : MonoBehaviour
     }
 
     //updates the players stat based off the current node
-    public void statUpdate(string text) 
+    public void StatUpdate(string text) 
     {
-        //use playerobject to change the stats
+        if(text == null) {return;}
         string[] words = text.Split(' ');
         Int32.TryParse(words[2],out int value);
         switch (words[0]) 
@@ -633,14 +827,14 @@ public class GameManager : MonoBehaviour
             {
                 //Debug.Log("This happens");
                 text = string.Join(" ", ele);
-                statUpdate(text);
+                StatUpdate(text);
             }
         }
     }
     
     //Checks if the player has the proper stats, either >= or < the requested stat restriction
     //For the moment this operates under the assumption that there can only be one stat restriction per option at a time. Not great. Should change later.
-    public bool statRestrictCheck(string text) 
+    public bool StatRestrictCheck(string text) 
     {
         if (text == null) 
         {
@@ -731,7 +925,7 @@ public class GameManager : MonoBehaviour
             {
                 //Debug.Log("This happens");
                 text = string.Join(" ", ele);
-                statRestrictCheck(text);
+                StatRestrictCheck(text);
             }
         }
 
@@ -747,7 +941,7 @@ public class GameManager : MonoBehaviour
         public int strength;
     }
 
-    public SaveData loadJSON() 
+    public SaveData LoadJSON() 
     {
         using (StreamReader r = new StreamReader("Assets/Resources/text.json")) 
         {

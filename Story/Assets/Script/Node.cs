@@ -10,11 +10,11 @@ public class Node
     public int Id { get; set; }
     public string Question { get; set; }
     public string Title { get;  set; }
-    public Choice C0 { get; set; }
-    public Choice C1 { get; set; }
-    public Choice C2 { get; set; }
-    public Choice C3 { get; set; }
-    public Choice C4 { get; set; }
+    public string[] C0 { get; set; }
+    public string[] C1 { get; set; }
+    public string[] C2 { get; set; }
+    public string[] C3 { get; set; }
+    public string[] C4 { get; set; }
     /** Previous Version
     public string C0s { get; set; }
     public string C1s { get; set; }
@@ -31,26 +31,30 @@ public class Node
     public Node C3 { get; set; }
     public Node C4 { get; set; }
     **/
+    
+    //I'm changing it up again. All the data for each choice is going to be stored in a string array. Nice and simple, no confusion with the god damn choice class
+    //each C(0-4) is going to have the info in the order of (text, nodeid (node it points to), stat restrictions, and stat changes)
     public Node()
     {
-        this.C0 = new Choice();
-        this.C1 = new Choice();
-        this.C2 = new Choice();
-        this.C3 = new Choice();
-        this.C4 = new Choice();
+        this.C0 = new string[4];
+        this.C1 = new string[4];
+        this.C2 = new string[4];
+        this.C3 = new string[4];
+        this.C4 = new string[4];
     }
 
     public Node(int id) 
     {
         this.Id = id;
-        this.C0 = new Choice();
-        this.C1 = new Choice();
-        this.C2 = new Choice();
-        this.C3 = new Choice();
-        this.C4 = new Choice();
+        this.C0 = new string[4];
+        this.C1 = new string[4];
+        this.C2 = new string[4];
+        this.C3 = new string[4];
+        this.C4 = new string[4];
+        
     }
 
-    public Node(int id,string question, string title, Choice c0, Choice c1, Choice c2, Choice c3, Choice c4)
+    public Node(int id,string question, string title, string[] c0, string[] c1, string[] c2, string[] c3, string[] c4)
     {
         this.Id = id;
         this.Question = question;
@@ -73,7 +77,7 @@ public class Node
     //    this.C3 = new Choice(c3);
     //    this.C4 = new Choice(c4);
     //}
-    public Node(int id, string question, string title, Choice c0, Choice c1, Choice c2, Choice c3, Choice c4, Node prev, Node defnext)
+    public Node(int id, string question, string title, string[] c0, string[] c1, string[] c2, string[] c3, string[] c4, Node prev, Node defnext)
     {
         this.Id = id;
         this.Question = question;
@@ -104,44 +108,6 @@ public class Node
         return;
     }
 
-
-    public static void PrintNode(Node node)
-    {
-        Debug.Log("Node info is ");
-        Debug.Log(node.Id);
-        Debug.Log(node.Question);
-        Debug.Log(node.Title);
-        Debug.Log(node.C0.text);
-        Debug.Log(node.C0.node.Id);
-        Debug.Log(node.C0.statChanges);
-        Debug.Log(node.C0.statRestrictions);
-        Debug.Log(node.C1.text);
-        Debug.Log(node.C1.node.Id);
-        Debug.Log(node.C1.statChanges);
-        Debug.Log(node.C1.statRestrictions);
-        Debug.Log(node.C2.text);
-        Debug.Log(node.C2.node.Id);
-        Debug.Log(node.C2.statChanges);
-        Debug.Log(node.C2.statRestrictions);
-        Debug.Log(node.C3.text);
-        Debug.Log(node.C3.node.Id);
-        Debug.Log(node.C3.statChanges);
-        Debug.Log(node.C3.statRestrictions);
-        if (node.C4 != null)
-        {
-            Debug.Log(node.C4.text);
-            Debug.Log(node.C4.node.Id);
-            Debug.Log(node.C4.statChanges);
-            Debug.Log(node.C4.statRestrictions);
-        }
-        //Console.WriteLine(node.Prev);
-        //Console.WriteLine(node.Defnext);
-        //Console.WriteLine(node.C1);
-        //Console.WriteLine(node.C2);
-        //Console.WriteLine(node.C3);
-        //Console.WriteLine(node.C4);
-    }
-
     public static void Main(string[] args)
     {
         //int id = 0;
@@ -161,36 +127,5 @@ public class Node
     //alright so I made this choice class to use in Node. This should allow .
     //Ideally I will be able to use this to streamline the above code and make statchanges easier
     
-
-}
-
-public class Choice
-{
-    public string text { get; set; }
-    public Node node { get; set; }
-    public string statChanges { get; set; }
-    public string statRestrictions { get; set; }
-
-
-    public Choice()
-    {
-
-    }
-    public Choice(string text)
-    {
-        this.text = text;
-    }
-    public Choice(string text, Node node)
-    {
-        this.text = text;
-        this.node = node;
-    }
-    public Choice(string text, Node node, string statChanges, string statRestrictions)
-    {
-        this.text = text;
-        this.node = node;
-        this.statChanges = statChanges;
-        this.statRestrictions = statRestrictions;
-    }
 
 }

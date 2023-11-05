@@ -13,27 +13,38 @@ public class PopupManager : MonoBehaviour
     public TMP_Text statText;
     public TMP_Text settingsText;
 
+    public UnityEngine.UI.Button statsBtn;
+    public UnityEngine.UI.Button settingsBtn;
 
     // Start is called before the first frame update
     void Start()
     {
         statScreen.SetActive(false);
         settingsScreen.SetActive(false);
-        
+
+        statsBtn.onClick.AddListener(TaskOnClickStats);
+        settingsBtn.onClick.AddListener(TaskOnClickSettings);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+
     }
 
-    void OnEnable()
+    void TaskOnClickStats() 
     {
+        statScreen.SetActive(true);
         statText.text = "Knowledge: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.mind + "\nCharm: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.heart + "\nFinesse: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness + "\nMuscle: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.strength;
+    }
 
+    void TaskOnClickSettings()
+    {
+        settingsScreen.SetActive(true);
         settingsText.text = "Are You Sure? No take backsies..";
     }
+
     public void resetGamePosition() 
     {
         GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.nodeid = 0;
@@ -43,7 +54,7 @@ public class PopupManager : MonoBehaviour
         GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.strength = 0;
         GameManager.playerObject.GetComponent<JSONWrite>().outputJSON();
 
-        GameManager.Start();
+        GameManager.InitializeGame();
     }
 
 

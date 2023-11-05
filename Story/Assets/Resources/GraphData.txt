@@ -1,4 +1,4 @@
-﻿0 id
+﻿0 
 {The following questions will help determine the kind of person you come to know yourself as in the coming months, answer as honestly as you can, and a House of Arcana will be given to you at the end.} Power comes from...            Choose one:
 Personal Power
 > What you know
@@ -6,96 +6,346 @@ Personal Power
 > What you have
 > Who you are
 > ( skip ) I know my House Arcana...
-No Info 
-1 id
-1 id 
-Mind + 2 Strength - 1 Sneakiness - 1 Heart - 1 endline 
-No Info 
-1 id
-Mind - 1 Strength - 1 Sneakiness - 1 Heart + 2 endline 
-No Info 
-1 id 
-Mind - 1 Strength - 1 Sneakiness + 2 Heart - 1 endline 
-No Info 
-1 id 
-Mind - 1 Strength + 2 Sneakiness - 1 Heart - 1 endline 
-No Info 
-3 id 
-No Info 
-No Info 
-1 id   
+Null
+1 
+1  
+Mind + 2 Strength - 1 Sneakiness - 1 Heart - 1  
+Null
+1 
+Mind - 1 Strength - 1 Sneakiness - 1 Heart + 2  
+Null 
+1  
+Mind - 1 Strength - 1 Sneakiness + 2 Heart - 1  
+Null 
+1  
+Mind - 1 Strength + 2 Sneakiness - 1 Heart - 1  
+Null 
+18  
+Null 
+Null 
+1  
 I seem to have a natural talent for...      Choose one: 
 Personal Skills 
 > Winning inside the Fighting Pits 
 > Witty Parlor Banter 
 > Lockpicking and Pickpocketing Drunks  
 > Studying the Demoni Infernal Texts 
-No Info 
+Null 
 0 
 2 
 2 
-Strength + 1  endline 
-No Info 
+Strength + 1   
+Null 
 2 
-Heart + 1  endline 
-No Info 
+Heart + 1   
+Null 
 2 
-Sneakiness + 1  endline 
-No Info 
+Sneakiness + 1   
+Null 
 2 
-Mind + 1  endline 
-No Info 
-No Info 
-No Info 
-No Info 
-2 
-It's better to confront your enemies...      Choose one: 
-Confrontation 
-> Head on, with good ol' fistacuffs 
-> With a spot of tea and conversation, we can hash it out 
-> Factually, in a well-structured argument. As long as it's obvious that I am correct 
-> With quiet scheming...everyone has to sleep sometime 
-No Info 
-1 
-3 
-3 
-Strength + 2  endline 
-No Info 
-3 
-Heart + 2  endline 
-No Info 
-3 
-Mind + 2  endline 
-No Info 
-3 
-Sneakiness + 2  endline 
-No Info 
-No Info 
-No Info 
-No Info 
-3 
-BULLSHITTT  
-Confrontation 
-> Head o 
-> With  
-> Factually, in a well-structured argumen 
-> With quiet  
-No Info 
-2 
-4 
-4 
-Strength + 2  endline 
-No Info 
-4 
-Heart + 2  endline 
-No Info 
-4 
-Mind + 2  endline 
-No Info 
-4 
-Sneakiness + 2  endline 
-No Info 
-No Info 
-No Info 
-No Info 
+Mind + 1   
+Null 
+Null 
+Null 
+Null 
+2
+It's better to confront your enemies...        Choose one:
+Confrontation
+> Head on, with good ol' fistacuffs
+> With a spot of tea and conversation, we can hash it out
+> Factually, in a well-structured argument. As long as it's obvious that I am correct
+> With quiet scheming...everyone has to sleep sometime
+Null
+1
+3
+3
+Strength + 1
+Null
+3
+Heart + 1
+Null
+3
+Mind + 1
+Null
+3
+Sneakiness + 1
+Null
+Null
+Null
+Null
+3
+What would you be imprisoned for?            Choose one:
+Crimes
+> Assault, Battery, Arson, something with character. Loud, too, heh
+> Burglary, Trespassing, Blackmail, the quiet vices
+> Public Intoxication, Criminal Attractiveness, sleeping with the chief's niece or nephew, the usual weekend
+> Laundering, Fraud, and Tax Evasion, thinking men's felonies
+Null
+2
+4
+4
+Strength + 1
+Null
+4
+Sneakiness + 1
+Null
+4
+Heart + 1
+Null
+4
+Mind + 1
+Null
+Null
+Null
+Null
+4
+If imprisoned, how would you escape?             Choose one:
+Escape
+> I'd craft a plot to escape around the routines and diagrams I mocked up over months of careful study.
+> I'd put together a team of the biggest and baddest mafulackas I could find and force my way out.
+> I'd sweet talk a few key contacts into a more comfortable stay and a reduced sentence.
+> Prison? Did you just ask me about prison? I framed some braindead Exile for that crap last month, but you didn't hear that from me
+Null
+3
+5
+5
+Mind + 1
+Null
+5
+Strength + 1
+Null
+5
+Heart + 1
+Null
+5
+Sneakiness + 1
+Null
+Null
+Null
+Null
+5
+A young street urchin attempts to steal food from your hands, you need what little you have to survive, what do you do?       Choose one:
+A Street Urchin
+> Ha! As if a child could wrest food from my hand, I'd easily overpower him.
+> I'd swiftly make the bread disappear with sleight of hand.
+> I'd offer to split it, explaining to him that this is all I have.
+> I'd, in exchange for keeping my bread, recount to him where I found it and where there might logically be more
+Null
+4
+6
+6
+Strength + 2 Mind - 1 Sneakiness - 1 Heart - 1
+Null
+7
+Strength - 1 Mind - 1 Sneakiness + 2 Heart - 1
+Null
+8
+Strength - 1 Mind - 1 Sneakiness - 1 Heart + 2
+Null
+9
+Strength - 1 Mind + 2 Sneakiness - 1 Heart - 1
+Null
+Null
+Null
+Null
+6
+You wrested your bread from the clutch of an urchin child. He snivels on the cobbled steps of the street the two of you tussled in, turning up the eyes of a teary-eyed dog at you. Frustration and sorrow play on his features, "Damnit!" He wails, "I'm never strong enough to get nuffin', I'm gonna starve on these streets!"
+Dealing With the Urchin
+> Offer him a piece of your bread, and a few lessons on how to better wrestle down some larger kids on the street for what they might have to spare
+> Give him a valuable lesson, in the form of a smack to the back of his head and the instruction to get a job
+Null
+Null
+Null
+5
+7
+10
+Null
+Null
+10
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+7
+You make the bread vanish from your hands with the skill of an above average street magician. The wonder in the boy's eyes is blatant, as much as it quickly fades into anger and frustration, "Hey!" He pulls a shiv from under his torn up jacket, "Give up that bread, slow-like, or I'll cut you something fierce. Nothing personal."
+Dealing With the Urchin
+> Offer to show him how you did the trick, along with a few tricks to better go unnoticed when robbing folks
+> You know your way around a knife fight, disarm and leave him sputtering in the mud of this street
+Null
+Null
+Null
+6
+8
+10
+Null
+Null
+10
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+8
+The boy's features contort in confusion. In expectation of some sort of catch, he pauses at your held out offering of half your bread.  He takes it with careful eyes watching you. After a set of mouthfuls, he nods demurely, "I'm not so good with'n my words, but I owe you one."
+Dealing With the Urchin
+> Offer to have him for some tea or coffee once you've landed your feet.
+> Tell him to be off and joke that you might be collecting on that debt at a later date
+Null
+Null
+Null
+7
+9
+10
+Null
+Null
+10
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+9
+The logic of what you said plays over the boy's face for a long while, him weighing his options and possible gain to holding you at knifepoint for food now, or hearing you out for more food later. He makes the wiser choice, and you recount to him what you know:
+Dealing With the Urchin
+> Give him accurate details and offer to set up a racket where he'd collect food on a system of stops you'd design, the food split between you
+> He's bound to come back once he's had his fill. or worse, you might have to find other sources of food once he knows your current ones. So, you feed him false information that'll put him both far from you and likely in the prejudiced eye of the Gypsy Court.
+Null
+Null
+Null
+8
+10
+10
+Null
+Null
+10
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+10
+You’re offered a considerable reward to collect information on a petty gang. How do you go about getting it?       Choose one:
+Collecting Information
+> I catch a member leaving a pub one night and beat him till he talks
+> I talk my way into the gang's good graces and glean information off of their drunken chatter
+> I pour over old records, paper headlines, and documents to get information on the gang
+> I shadow the comings and goings of one of the members for a week
+Null
+9
+11
+11
+Strength + 1
+Null
+11
+Heart + 1
+Null
+11
+Mind + 1
+Null
+11
+Sneakiness + 1
+Null
+Null
+Null
+Null
+11
+The Dasfara Police Force are set to raid and destroy your homeless shelter, what do you do?        Choose one:
+Police Attention
+> I'd gather a crew of other shelter-dwellers to fight them off
+> I try to talk them into believing they have the wrong shelter, or at least giving me a day to get my things together
+> I sight the Dasfara Police Code as to my right to be here for a standard of seven days against proof of violation otherwise
+> I let them burn down my decoy, it makes them feel important
+Null
+10
+12
+12
+Strength + 1
+Null
+12
+Heart + 1
+Null
+12
+Mind + 1
+Null
+12
+Sneakiness + 1
+Null
+Null
+Null
+Null
+12
+What is it that you want most?        Choose one:
+Ambition
+> Power, to be all that I am, unchallenged
+> Fame, to be well-known and well-connected
+> Knowledge, to study the occult and the known world beyond ever done before
+> Freedom, to get what's mine, whenever I decide it, even if it's yours right now, baby
+Null
+11
+13
+13
+Strength + 2 Sneakiness - 1 Mind - 1 Heart - 1
+Null
+13
+Strength - 1 Sneakiness - 1 Mind - 1 Heart + 2
+Null
+13
+Strength - 1 Sneakiness - 1 Mind + 2 Heart - 1
+Null
+13
+Strength - 1 Sneakiness + 2 Mind - 1 Heart - 1
+Null
+Null
+Null
+Null
+13
+Someone's Dominant Aspect is how they approach problems and conflict by default. Their likely immediate answer to most situations and as a result, their defacto strength. We've determined yours over the course of these questions. Your Dominant Aspect is...
+Dominant Aspect
+> Muscle is my dominant aspect
+> Charm is my dominant aspect
+> Finesse is my dominant aspect
+> Knowledge is my dominant aspect
+Null
+12
+14
+14
+Null
+Strength + 3
+15
+Null
+Heart + 3
+16
+Null
+Sneakiness + 3
+17
+Null
+Mind + 3
+Null
+Null
+Null
 endgame

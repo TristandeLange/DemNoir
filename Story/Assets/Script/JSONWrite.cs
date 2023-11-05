@@ -27,7 +27,7 @@ public class JSONWrite : MonoBehaviour
     }
 
 
-    public playerStats myPlayer = new playerStats(0,10,10,10,10);
+    public playerStats myPlayer = new playerStats(0,0,0,0,10);
 
 
 
