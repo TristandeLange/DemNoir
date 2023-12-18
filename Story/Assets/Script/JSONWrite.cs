@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using UnityEditorInternal;
+//using UnityEditorInternal;
 
 public class JSONWrite : MonoBehaviour
 {

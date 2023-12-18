@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UIElements;
 using System.IO;
 using System;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine.UI;
 using UnityEditor;
 using JetBrains.Annotations;
@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using System.Linq;
 using static Node;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 //using static JSONWrite;
 
 public class GameManager : MonoBehaviour
@@ -22,22 +23,27 @@ public class GameManager : MonoBehaviour
     public Node focusNode;
     public TMP_Text title;
     public TMP_Text question;
+    
+    private ImageManager imageManagerScript;
+    private QuestionManager questionManagerScript;
+
     public TMP_Text c0s;
     public TMP_Text c1s;
     public TMP_Text c2s;
     public TMP_Text c3s;
     public TMP_Text c4s;
+
     private Node c0;
     private Node c1;
     private Node c2;
     private Node c3;
     private Node c4;
 
-    public string c0ID;
-    public string c1ID;
-    public string c2ID;
-    public string c3ID;
-    public string c4ID;
+    private string c0ID;
+    private string c1ID;
+    private string c2ID;
+    private string c3ID;
+    private string c4ID;
 
     public UnityEngine.UI.Button Btn0;
     public UnityEngine.UI.Button Btn1;
@@ -61,11 +67,18 @@ public class GameManager : MonoBehaviour
         Btn3.onClick.AddListener(TaskOnClick3);
         Btn4.onClick.AddListener(TaskOnClick4);
 
+        imageManagerScript = GameObject.FindGameObjectWithTag("MainImage").GetComponent<ImageManager>();
+        questionManagerScript = GameObject.FindGameObjectWithTag("QuestionTage").GetComponent<QuestionManager>();
+
         InitializeGame();
     }
 
+    //separate from start so that it can be restarted more easily
     public void InitializeGame() 
     {
+        imageManagerScript.toggleActive(false);
+        questionManagerScript.toggleAnchorSize(true);
+
         rootNode = new Node(0);
         focusNode = rootNode;
         AssembleGraph();
@@ -80,9 +93,26 @@ public class GameManager : MonoBehaviour
 
     void TaskOnClick0()
     {
-        //PrintNode(focusNode);
-        //Debug.Log(focusNode.Defnext.Id);
         Node nextnode = SearchByID(c0.Id);
+
+        if (nextnode.ImageTitle != null)
+        {
+
+            Sprite newimage = Resources.Load<Sprite>("Images/" + nextnode.ImageTitle);
+            if (newimage != null)
+            {
+                imageManagerScript.toggleActive(true);
+                questionManagerScript.toggleAnchorSize(false);
+                imageManagerScript.changeImage(newimage);
+            }
+        }
+        else
+        {
+            imageManagerScript.toggleActive(false);
+            questionManagerScript.toggleAnchorSize(true);
+        }
+
+
         if (Btn0.interactable != false || focusNode.C0[3] != null || focusNode.C0[3] != "")
         {
 
@@ -94,8 +124,25 @@ public class GameManager : MonoBehaviour
     }
     void TaskOnClick1() 
     {
-        Debug.Log(c1.Id);
         Node nextnode = SearchByID(c1.Id);
+
+        if (nextnode.ImageTitle != null)
+        {
+            
+            Sprite newimage = Resources.Load<Sprite>("Images/" +nextnode.ImageTitle);
+            if(newimage != null) 
+            {
+                imageManagerScript.toggleActive(true);
+                questionManagerScript.toggleAnchorSize(false);
+                imageManagerScript.changeImage(newimage);
+            }
+        }
+        else
+        {
+            imageManagerScript.toggleActive(false);
+            questionManagerScript.toggleAnchorSize(true);
+        }
+
         if (Btn1.interactable != false || focusNode.C1[3] != "Null" || focusNode.C1[3] != "")
         {
             StatUpdate(focusNode.C1[3]);
@@ -106,6 +153,24 @@ public class GameManager : MonoBehaviour
     void TaskOnClick2() 
     {
         Node nextnode = SearchByID(c2.Id);
+
+        if (nextnode.ImageTitle != null)
+        {
+
+            Sprite newimage = Resources.Load<Sprite>("Images/" + nextnode.ImageTitle);
+            if (newimage != null)
+            {
+                imageManagerScript.toggleActive(true);
+                questionManagerScript.toggleAnchorSize(false);
+                imageManagerScript.changeImage(newimage);
+            }
+        }
+        else
+        {
+            imageManagerScript.toggleActive(false);
+            questionManagerScript.toggleAnchorSize(true);
+        }
+
         if (Btn2.interactable != false || focusNode.C2[3] != null || focusNode.C2[3] != "")
         {
             StatUpdate(focusNode.C2[3]);
@@ -116,6 +181,24 @@ public class GameManager : MonoBehaviour
     void TaskOnClick3() 
     {
         Node nextnode = SearchByID(c3.Id);
+
+        if (nextnode.ImageTitle != null)
+        {
+
+            Sprite newimage = Resources.Load<Sprite>("Images/" + nextnode.ImageTitle);
+            if (newimage != null)
+            {
+                imageManagerScript.toggleActive(true);
+                questionManagerScript.toggleAnchorSize(false);
+                imageManagerScript.changeImage(newimage);
+            }
+        }
+        else
+        {
+            imageManagerScript.toggleActive(false);
+            questionManagerScript.toggleAnchorSize(true);
+        }
+
         if (Btn3.interactable != false || focusNode.C3[3] != null || focusNode.C3[3] != "")
         {
             StatUpdate(focusNode.C3[3]);
@@ -126,6 +209,24 @@ public class GameManager : MonoBehaviour
     void TaskOnClick4() 
     {
         Node nextnode = SearchByID(c4.Id);
+
+        if (nextnode.ImageTitle != null)
+        {
+
+            Sprite newimage = Resources.Load<Sprite>("Images/" + nextnode.ImageTitle);
+            if (newimage != null)
+            {
+                imageManagerScript.toggleActive(true);
+                questionManagerScript.toggleAnchorSize(false);
+                imageManagerScript.changeImage(newimage);
+            }
+        }
+        else
+        {
+            imageManagerScript.toggleActive(false);
+            questionManagerScript.toggleAnchorSize(true);
+        }
+
         if (Btn4.interactable != false || focusNode.C4[3] != null || focusNode.C4[3] != "")
         {
             StatUpdate(focusNode.C4[3]);
@@ -138,6 +239,8 @@ public class GameManager : MonoBehaviour
     //checks the validity of each choice node as well. 
     private void UpdateFromNode(Node node) 
     {
+        
+        
         title.text = node.Title;
         question.text = node.Question;
 
@@ -232,7 +335,6 @@ public class GameManager : MonoBehaviour
         Node focus;
         Node temp;
         string line;
-        //c1s.text = "it gets to this at all"; - this worked so it does get here.
         string filepath = "Assets/Resources/GraphData.txt"; //this works!!!!!!
         try
         {
@@ -249,13 +351,14 @@ public class GameManager : MonoBehaviour
                         focus = new Node(id);
                     }
 
-                    // Obsolete Version
+                    /** Obsolete Version
                     //line = sr.ReadLine();   //reads statRestrict
                     //line = line.Trim();
                     //focus.StatRestrict = StringNullCheck(line);
                     //line = sr.ReadLine();   //reads statChange
                     //line = line.Trim();
-                    //focus.StatChange = StringNullCheck(line);
+                    focus.StatChange = StringNullCheck(line);
+                    **/
                     
                     line = sr.ReadLine();   //reads question
                     line = line.Trim();
@@ -264,6 +367,10 @@ public class GameManager : MonoBehaviour
                     line = sr.ReadLine();   //reads title
                     line = line.Trim();
                     focus.Title = StringNullCheck(line);
+
+                    line = sr.ReadLine();   //reads imagetitle
+                    line = line.Trim();
+                    focus.ImageTitle = StringNullCheck(line);
 
                     line = sr.ReadLine();   //reads C0s
                     line = line.Trim();
@@ -767,9 +874,10 @@ public class GameManager : MonoBehaviour
         if(text == null) {return;}
         string[] words = text.Split(' ');
         Int32.TryParse(words[2],out int value);
+
         switch (words[0]) 
         {
-
+            
             case "Mind":
                 if (words[1] == "+") 
                 {
@@ -778,6 +886,10 @@ public class GameManager : MonoBehaviour
                 else if (words[1] == "-") 
                 {
                     playerObject.GetComponent<JSONWrite>().myPlayer.mind -= value;
+                }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.mind = value;
                 }
 
                 break;
@@ -790,6 +902,11 @@ public class GameManager : MonoBehaviour
                 {
                     playerObject.GetComponent<JSONWrite>().myPlayer.heart -= value;
                 }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.heart = value;
+                }
+
                 break;
             case "Sneakiness":
                 if (words[1] == "+")
@@ -800,6 +917,11 @@ public class GameManager : MonoBehaviour
                 {
                     playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness -= value;
                 }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness = value;
+                }
+
                 break;
             case "Strength":
                 if (words[1] == "+")
@@ -811,6 +933,11 @@ public class GameManager : MonoBehaviour
                 {
                     playerObject.GetComponent<JSONWrite>().myPlayer.strength -= value;
                 }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.strength = value;
+                }
+
                 break;
             default:
                 Debug.Log("incorrect stat option");
@@ -860,6 +987,13 @@ public class GameManager : MonoBehaviour
                         return true;
                     }
                 }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.mind == value)
+                    {
+                        return true;
+                    }
+                }
 
                 break;
             case "Heart":
@@ -877,6 +1011,14 @@ public class GameManager : MonoBehaviour
                         return true;
                     }
                 }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.heart == value)
+                    {
+                        return true;
+                    }
+                }
+
                 break;
             case "Sneakiness":
                 if (words[1] == "+")
@@ -893,6 +1035,14 @@ public class GameManager : MonoBehaviour
                         return true;
                     }
                 }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness == value)
+                    {
+                        return true;
+                    }
+                }
+
                 break;
             case "Strength":
                 if (words[1] == "+")
@@ -909,9 +1059,17 @@ public class GameManager : MonoBehaviour
                         return true;
                     }
                 }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.strength == value)
+                    {
+                        return true;
+                    }
+                }
+
                 break;
             default:
-                Debug.Log("incorrect stat option");
+                Debug.Log("incorrect stat option : " + words[0]);
                 break;
 
         }

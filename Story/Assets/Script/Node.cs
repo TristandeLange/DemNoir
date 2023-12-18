@@ -10,6 +10,7 @@ public class Node
     public int Id { get; set; }
     public string Question { get; set; }
     public string Title { get;  set; }
+    public string ImageTitle { get; set; }
     public string[] C0 { get; set; }
     public string[] C1 { get; set; }
     public string[] C2 { get; set; }
@@ -54,11 +55,12 @@ public class Node
         
     }
 
-    public Node(int id,string question, string title, string[] c0, string[] c1, string[] c2, string[] c3, string[] c4)
+    public Node(int id,string question, string title, string imageTitle, string[] c0, string[] c1, string[] c2, string[] c3, string[] c4)
     {
         this.Id = id;
         this.Question = question;
         this.Title = title;
+        this.ImageTitle = imageTitle;
         this.C0 = c0;
         this.C1 = c1;
         this.C2 = c2;
@@ -66,22 +68,12 @@ public class Node
         this.C4 = c4;
     }
 
-    //public Node(int id, string question, string title, string c0, string c1, string c2, string c3, string c4)
-    //{
-    //   this.Id = id;
-    //    this.Question = question;
-    //    this.Title = title;
-    //    this.C0 = new Choice(c0);
-    //    this.C1 = new Choice(c1);
-    //   this.C2 = new Choice(c2);
-    //    this.C3 = new Choice(c3);
-    //    this.C4 = new Choice(c4);
-    //}
-    public Node(int id, string question, string title, string[] c0, string[] c1, string[] c2, string[] c3, string[] c4, Node prev, Node defnext)
+    public Node(int id, string question, string title, string imageTitle, string[] c0, string[] c1, string[] c2, string[] c3, string[] c4, Node prev, Node defnext)
     {
         this.Id = id;
         this.Question = question;
         this.Title = title;
+        this.ImageTitle = imageTitle;
         this.C0 = c0;
         this.C1 = c1;
         this.C2 = c2;
@@ -97,6 +89,7 @@ public class Node
         n2.Id = n1.Id;
         n2.Question = n1.Question;
         n2.Title = n1.Title;
+        n2.ImageTitle = n1.ImageTitle;
         n2.C0 = n1.C0;
         n2.C1 = n1.C1;
         n2.C2 = n1.C2;
@@ -124,8 +117,6 @@ public class Node
         //PrintNode(root.Defnext);
     }
 
-    //alright so I made this choice class to use in Node. This should allow .
-    //Ideally I will be able to use this to streamline the above code and make statchanges easier
     
 
 }

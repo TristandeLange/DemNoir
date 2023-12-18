@@ -1,6 +1,7 @@
-﻿0 
+﻿ 0 
 {The following questions will help determine the kind of person you come to know yourself as in the coming months, answer as honestly as you can, and a House of Arcana will be given to you at the end.} Power comes from...            Choose one:
 Personal Power
+Null
 > What you know
 > Who you know
 > What you have
@@ -26,6 +27,7 @@ Null
 1  
 I seem to have a natural talent for...      Choose one: 
 Personal Skills 
+Null
 > Winning inside the Fighting Pits 
 > Witty Parlor Banter 
 > Lockpicking and Pickpocketing Drunks  
@@ -51,6 +53,7 @@ Null
 2
 It's better to confront your enemies...        Choose one:
 Confrontation
+Null
 > Head on, with good ol' fistacuffs
 > With a spot of tea and conversation, we can hash it out
 > Factually, in a well-structured argument. As long as it's obvious that I am correct
@@ -76,6 +79,7 @@ Null
 3
 What would you be imprisoned for?            Choose one:
 Crimes
+Null
 > Assault, Battery, Arson, something with character. Loud, too, heh
 > Burglary, Trespassing, Blackmail, the quiet vices
 > Public Intoxication, Criminal Attractiveness, sleeping with the chief's niece or nephew, the usual weekend
@@ -101,6 +105,7 @@ Null
 4
 If imprisoned, how would you escape?             Choose one:
 Escape
+Null
 > I'd craft a plot to escape around the routines and diagrams I mocked up over months of careful study.
 > I'd put together a team of the biggest and baddest mafulackas I could find and force my way out.
 > I'd sweet talk a few key contacts into a more comfortable stay and a reduced sentence.
@@ -126,6 +131,7 @@ Null
 5
 A young street urchin attempts to steal food from your hands, you need what little you have to survive, what do you do?       Choose one:
 A Street Urchin
+Null
 > Ha! As if a child could wrest food from my hand, I'd easily overpower him.
 > I'd swiftly make the bread disappear with sleight of hand.
 > I'd offer to split it, explaining to him that this is all I have.
@@ -151,6 +157,7 @@ Null
 6
 You wrested your bread from the clutch of an urchin child. He snivels on the cobbled steps of the street the two of you tussled in, turning up the eyes of a teary-eyed dog at you. Frustration and sorrow play on his features, "Damnit!" He wails, "I'm never strong enough to get nuffin', I'm gonna starve on these streets!"
 Dealing With the Urchin
+Null
 > Offer him a piece of your bread, and a few lessons on how to better wrestle down some larger kids on the street for what they might have to spare
 > Give him a valuable lesson, in the form of a smack to the back of his head and the instruction to get a job
 Null
@@ -176,6 +183,7 @@ Null
 7
 You make the bread vanish from your hands with the skill of an above average street magician. The wonder in the boy's eyes is blatant, as much as it quickly fades into anger and frustration, "Hey!" He pulls a shiv from under his torn up jacket, "Give up that bread, slow-like, or I'll cut you something fierce. Nothing personal."
 Dealing With the Urchin
+Null
 > Offer to show him how you did the trick, along with a few tricks to better go unnoticed when robbing folks
 > You know your way around a knife fight, disarm and leave him sputtering in the mud of this street
 Null
@@ -201,6 +209,7 @@ Null
 8
 The boy's features contort in confusion. In expectation of some sort of catch, he pauses at your held out offering of half your bread.  He takes it with careful eyes watching you. After a set of mouthfuls, he nods demurely, "I'm not so good with'n my words, but I owe you one."
 Dealing With the Urchin
+Null
 > Offer to have him for some tea or coffee once you've landed your feet.
 > Tell him to be off and joke that you might be collecting on that debt at a later date
 Null
@@ -226,6 +235,7 @@ Null
 9
 The logic of what you said plays over the boy's face for a long while, him weighing his options and possible gain to holding you at knifepoint for food now, or hearing you out for more food later. He makes the wiser choice, and you recount to him what you know:
 Dealing With the Urchin
+Null
 > Give him accurate details and offer to set up a racket where he'd collect food on a system of stops you'd design, the food split between you
 > He's bound to come back once he's had his fill. or worse, you might have to find other sources of food once he knows your current ones. So, you feed him false information that'll put him both far from you and likely in the prejudiced eye of the Gypsy Court.
 Null
@@ -251,6 +261,7 @@ Null
 10
 You’re offered a considerable reward to collect information on a petty gang. How do you go about getting it?       Choose one:
 Collecting Information
+Null
 > I catch a member leaving a pub one night and beat him till he talks
 > I talk my way into the gang's good graces and glean information off of their drunken chatter
 > I pour over old records, paper headlines, and documents to get information on the gang
@@ -276,6 +287,7 @@ Null
 11
 The Dasfara Police Force are set to raid and destroy your homeless shelter, what do you do?        Choose one:
 Police Attention
+Null
 > I'd gather a crew of other shelter-dwellers to fight them off
 > I try to talk them into believing they have the wrong shelter, or at least giving me a day to get my things together
 > I sight the Dasfara Police Code as to my right to be here for a standard of seven days against proof of violation otherwise
@@ -301,6 +313,7 @@ Null
 12
 What is it that you want most?        Choose one:
 Ambition
+Null
 > Power, to be all that I am, unchallenged
 > Fame, to be well-known and well-connected
 > Knowledge, to study the occult and the known world beyond ever done before
@@ -326,6 +339,7 @@ Null
 13
 Someone's Dominant Aspect is how they approach problems and conflict by default. Their likely immediate answer to most situations and as a result, their defacto strength. We've determined yours over the course of these questions. Your Dominant Aspect is...
 Dominant Aspect
+Null
 > Muscle is my dominant aspect
 > Charm is my dominant aspect
 > Finesse is my dominant aspect
@@ -345,6 +359,734 @@ Sneakiness + 3
 17
 Null
 Mind + 3
+Null
+Null
+Null
+14
+Dominant Aspect: Muscle                                         Muscle is the aspect of raw power, physically and in the sense of personal stubborn grit. People that exhibit this Aspect rely on head-on solutions. Well, aren't you a tough bastard.
+Muscle
+Null
+> My Submissive Aspect...
+> My Major Arcana...
+> Perhaps not..(view other possible Dominant Aspects)
+Null
+Null
+13
+15
+22
+Null
+Strength - 8
+23
+Strength = 7 Heart = 1 Sneakiness = 1 Mind = 1
+Strength + 8
+13
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+15
+Dominant Aspect: Charm                                            Charm is the Aspect of interpersonal skills and social ability. People that exhibit this aspect rely on hashing things out socially rather than entering unnecessary violence. It's the aspect of a cultured or pragmatic individual, what good company you make.
+Charm
+Null
+> My Submissive Aspect...
+> My Major Arcana...
+> Perhaps not..(view other possible Dominant Aspects)
+Null
+Null
+14
+16
+24
+Null
+Heart - 8
+25
+Heart = 7 Mind = 1 Strength = 1 Sneakiness = 1
+Heart + 8
+13
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+16
+Dominant Aspect: Finesse                                           Finesse is the Aspect of cleverness, quick-thinking and creative solutions to problems. People that exhibit this Aspect rely on solutions creatively adjacent to upfront confrontation. You're quite the clever bastard, but don't let me catch you smirking again. It makes people uncomfortable when you do it like that.
+Finesse
+Null
+> My Submissive Aspect...
+> My Major Arcana...
+> Perhaps not..(view other possible Dominant Aspects)
+Null
+Null
+15
+17
+26
+Null
+Sneakiness - 8
+27
+Heart = 1 Mind = 1 Strength = 1 Sneakiness = 7
+Sneakiness + 8
+13
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+17
+Dominant Aspect: Knowledge                                      Knowledge is the Aspect of diligence, intellect, and raw mental power. People that exhibit this Aspect rely on thinking their way through problems and conflict. Everyone knows you're the smartest one in the room...we just can't give you the satisfaction of saying it. So there!
+Knowledge
+Null
+> My Submissive Aspect...
+> My Major Arcana...
+> Perhaps not..(view other possible Dominant Aspects)
+Null
+Null
+16
+18
+28
+Null
+Mind - 8
+29
+Heart = 1 Mind = 7 Strength = 1 Sneakiness = 1
+Mind + 8
+13
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+18
+My House Arcana is...
+House Arcana
+Null
+> Strength
+> Death
+> Justice
+> The Sun
+(More Options)
+17
+19
+42
+Strength = 5 Heart = 3 Sneakiness = 1 Mind = 1
+Null
+43
+Strength = 5 Heart = 1 Sneakiness = 3 Mind = 1
+Null
+44
+Strength = 5 Heart = 1 Sneakiness = 1 Mind = 3
+Null
+23
+Strength = 7 Heart = 1 Sneakiness = 1 Mind = 1
+Null
+19
+Null
+Null
+19
+My House Arcana is... (Page 2)
+House Arcana
+Null
+> The Devil
+> The Fool
+> The Empress
+> The Star
+(More Options)
+18
+20
+45
+Strength = 3 Heart = 5 Sneakiness = 1 Mind = 1
+Null
+46
+Strength = 1 Heart = 5 Sneakiness = 3 Mind = 1
+Null
+47
+Strength = 1 Heart = 5 Sneakiness = 1 Mind = 3
+Null
+25
+Strength = 1 Heart = 7 Sneakiness = 1 Mind = 1
+Null
+20
+Null
+Null
+20
+My House Arcana is...
+House Arcana
+Null
+> The Chariot
+> The Hanged Man
+> The High Priestess
+> The Moon
+(More Options)
+19
+21
+48
+Strength = 3 Heart = 1 Sneakiness = 5 Mind = 1
+Null
+49
+Strength = 1 Heart = 3 Sneakiness = 5 Mind = 1
+Null
+50
+Strength = 1 Heart = 1 Sneakiness = 5 Mind = 3
+Null
+27
+Strength = 1 Heart = 1 Sneakiness = 7 Mind = 1
+Null
+21
+Null
+Null
+21
+My House Arcana is...
+House Arcana
+Null
+> The Hermit
+> The Emperor
+> The Magician
+> Judgement
+(First Page Again)
+19
+22
+51
+Strength = 3 Heart = 1 Sneakiness = 1 Mind = 5
+Null
+52
+Strength = 1 Heart = 3 Sneakiness = 1 Mind = 5
+Null
+53
+Strength = 1 Heart = 1 Sneakiness = 3 Mind = 5
+Null
+29
+Strength = 1 Heart = 1 Sneakiness = 1 Mind = 7
+Null
+18
+Null
+Null
+22
+Someone's Submissive Aspect is how they solve conflicts or problems that can't be addressed by their Dominant Aspect. Your Submissive Aspect is...
+Submissive Aspect
+Null
+> Charm is my submissive aspect
+> Finesse is my submissive aspect
+> Knowledge is my submissive aspect
+Null
+Null
+21
+23
+30
+Null
+Heart + 1
+31
+Null
+Sneakiness + 1
+32
+Null
+Mind + 1
+Null
+Null
+Null
+Null
+Null
+Null
+23
+This is the House of Arcana that Archetypes your personality. The House of the Sun is defined by an overwhelming presence of character and gravitas.                            - “The Sun never moves unless on it’s own terms.”
+House Of The Sun
+TheSun
+> Onward
+Null
+Null
+Null
+Null
+22
+24
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+24
+Someone's Submissive Aspect is how they solve conflicts or problems that can't be addressed by their Dominant Aspect. Your Submissive Aspect is...
+Submissive Aspect
+Null
+> Muscle is my submissive aspect
+> Finesse is my submissive aspect
+> Knowledge is my submissive aspect
+Null
+Null
+23
+25
+33
+Null
+Strength + 1
+34
+Null
+Sneakiness + 1
+35
+Null
+Mind + 1
+Null
+Null
+Null
+Null
+Null
+Null
+25
+This is the House of Arcana that Archetypes your personality. The House of the Star is defined by an overwhelming social ability that eclipses any other traits.                           - “A star is never alone in the night sky…surely they make lively conversation.”
+House Of The Star
+TheStar
+> Onward
+Null
+Null
+Null
+Null
+24
+26
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+26
+Someone's Submissive Aspect is how they solve conflicts or problems that can't be addressed by their Dominant Aspect. Your Submissive Aspect is...
+Submissive Aspect
+Null
+> Muscle is my submissive aspect
+> Charm is my submissive aspect
+> Knowledge is my submissive aspect
+Null
+Null
+25
+27
+36
+Null
+Strength + 1
+37
+Null
+Heart + 1
+38
+Null
+Mind + 1
+Null
+Null
+Null
+Null
+Null
+Null
+27
+This is the House of Arcana that Archetypes your personality. The House of the Moon is defined by an overwhelming ability to move unseen or unexpected with your solutions to problems                            - “It’s hard to see anything in the moonlight…until it’s too late.”
+House Of The Moon
+TheMoon
+> Onward
+Null
+Null
+Null
+Null
+26
+28
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+28
+Someone's Submissive Aspect is how they solve conflicts or problems that can't be addressed by their Dominant Aspect. Your Submissive Aspect is...
+Submissive Aspect
+Null
+> Muscle is my submissive aspect
+> Charm is my submissive aspect
+> Finesse is my submissive aspect
+Null
+Null
+27
+29
+39
+Null
+Strength + 1
+40
+Null
+Heart + 1
+41
+Null
+Sneakiness + 1
+Null
+Null
+Null
+Null
+Null
+Null
+29
+This is the House of Arcana that Archetypes your personality. The House of Judgement is defined by an overwhelming intellectual ability.                     - “Knowledge, given power, is good Judgement.”
+House Of Judgement
+Judgement
+> Onward
+Null
+Null
+Null
+Null
+28
+30
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+30
+Charm is the Aspect of interpersonal skills and social ability. People that exhibit this aspect rely on hashing things out socially rather than entering unnecessary violence. It's the aspect of a cultured or pragmatic individual, what good company you make.
+Submissive Aspect: Charm 
+Charm
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+29
+31
+42
+Strength = 5 Heart = 3 Sneakiness = 1 Mind = 1
+Null
+22
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+31
+Finesse is the Aspect of cleverness, quick-thinking and creative solutions to problems. People that exhibit this Aspect pride themselves on outwitting their opponents and rely on solutions creatively adjacent to upfront confrontation. You're quite the clever bastard, but don't let me catch you smirking again. It makes people uncomfortable when you do it like that.
+Submissive Aspect: Finesse
+Finesse
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+30
+32
+43
+Strength = 5 Heart = 1 Sneakiness = 3 Mind = 1
+Null
+22
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+32
+Knowledge is the Aspect of diligence, intellect, and raw mental power. People that exhibit this Aspect rely on thinking their way through problems and conflict. Everyone knows you're the smartest one in the room...we just can't give you the satisfaction of saying it. So there!
+Submissive Aspect: Knowledge
+Knowledge
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+31
+33
+44
+Strength = 5 Heart = 1 Sneakiness = 1 Mind = 3
+Null
+22
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+33
+Muscle is the aspect of raw power, physically and in the sense of personal stubborn grit. People that exhibit this Aspect rely on head-on solutions. Well, aren't you a tough bastard.
+Submissive Aspect: Muscle
+Muscle
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+32
+34
+45
+Strength = 3 Heart = 5 Sneakiness = 1 Mind = 1
+Null
+24
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+34
+Finesse is the Aspect of cleverness, quick-thinking and creative solutions to problems. People that exhibit this Aspect pride themselves on outwitting their opponents and rely on solutions creatively adjacent to upfront confrontation. You're quite the clever bastard, but don't let me catch you smirking again. It makes people uncomfortable when you do it like that.
+Submissive Aspect: Finesse
+Finesse
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+33
+35
+46
+Strength = 1 Heart = 5 Sneakiness = 1 Mind = 3
+Null
+24
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+35
+Knowledge is the Aspect of diligence, intellect, and raw mental power. People that exhibit this Aspect rely on thinking their way through problems and conflict. Everyone knows you're the smartest one in the room...we just can't give you the satisfaction of saying it. So there!
+Submissive Aspect: Knowledge
+Knowledge
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+34
+36
+47
+Strength = 1 Heart = 5 Sneakiness = 1 Mind = 3
+Null
+24
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+36
+Muscle is the aspect of raw power, physically and in the sense of personal stubborn grit. People that exhibit this Aspect rely on head-on solutions. Well, aren't you a tough bastard.
+Submissive Aspect: Muscle
+Muscle
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+35
+37
+48
+Strength = 3 Heart = 1 Sneakiness = 5 Mind = 1
+Null
+26
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+37
+Charm is the Aspect of interpersonal skills and social ability. People that exhibit this aspect rely on hashing things out socially rather than entering unnecessary violence. It's the aspect of a cultured or pragmatic individual, what good company you make.
+Submissive Aspect: Charm 
+Charm
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+36
+38
+49
+Strength = 1 Heart = 3 Sneakiness = 5 Mind = 1
+Null
+26
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+38
+Knowledge is the Aspect of diligence, intellect, and raw mental power. People that exhibit this Aspect rely on thinking their way through problems and conflict. Everyone knows you're the smartest one in the room...we just can't give you the satisfaction of saying it. So there!
+Submissive Aspect: Knowledge
+Knowledge
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+37
+39
+50
+Strength = 1 Heart = 1 Sneakiness = 5 Mind = 3
+Null
+26
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+39
+Muscle is the aspect of raw power, physically and in the sense of personal stubborn grit. People that exhibit this Aspect rely on head-on solutions. Well, aren't you a tough bastard.
+Submissive Aspect: Muscle
+Muscle
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+38
+40
+51
+Strength = 3 Heart = 1 Sneakiness = 1 Mind = 5
+Null
+28
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+40
+Charm is the Aspect of interpersonal skills and social ability. People that exhibit this aspect rely on hashing things out socially rather than entering unnecessary violence. It's the aspect of a cultured or pragmatic individual, what good company you make.
+Submissive Aspect: Charm 
+Charm
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+39
+41
+52
+Strength = 1 Heart = 3 Sneakiness = 1 Mind = 5
+Null
+28
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+41
+Finesse is the Aspect of cleverness, quick-thinking and creative solutions to problems. People that exhibit this Aspect pride themselves on outwitting their opponents and rely on solutions creatively adjacent to upfront confrontation. You're quite the clever bastard, but don't let me catch you smirking again. It makes people uncomfortable when you do it like that.
+Submissive Aspect: Finesse
+Finesse
+> My Major Arcana...
+> Perhaps not..(view other possible Submissive Aspects)
+Null
+Null
+Null
+40
+42
+53
+Strength = 1 Heart = 1 Sneakiness = 3 Mind = 5
+Null
+28
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
 Null
 Null
 Null
