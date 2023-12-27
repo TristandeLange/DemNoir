@@ -25,7 +25,10 @@ public class GameManager : MonoBehaviour
     public TMP_Text question;
     
     private ImageManager imageManagerScript;
-    private QuestionManager questionManagerScript;
+    private QuestionManager textScrollerScript;
+    private QuestionManager questionScript;
+
+    public Scrollbar scrollbar;
 
     public TMP_Text c0s;
     public TMP_Text c1s;
@@ -61,14 +64,17 @@ public class GameManager : MonoBehaviour
         //UnityEngine.UI.Button btn2 = Btn2.GetComponent<UnityEngine.UI.Button>();
         //UnityEngine.UI.Button btn3 = Btn3.GetComponent<UnityEngine.UI.Button>();
         //UnityEngine.UI.Button btn4 = Btn4.GetComponent<UnityEngine.UI.Button>();
-        Btn0.onClick.AddListener(TaskOnClick0);
-        Btn1.onClick.AddListener(TaskOnClick1); //connects the buttons to onclick event
+        Btn0.onClick.AddListener(TaskOnClick0); //connects the buttons to onclick event
+        Btn1.onClick.AddListener(TaskOnClick1); 
         Btn2.onClick.AddListener(TaskOnClick2);
         Btn3.onClick.AddListener(TaskOnClick3);
         Btn4.onClick.AddListener(TaskOnClick4);
 
         imageManagerScript = GameObject.FindGameObjectWithTag("MainImage").GetComponent<ImageManager>();
-        questionManagerScript = GameObject.FindGameObjectWithTag("QuestionTage").GetComponent<QuestionManager>();
+        textScrollerScript = GameObject.FindGameObjectWithTag("TextScroller").GetComponent<QuestionManager>();
+        questionScript = GameObject.FindGameObjectWithTag("QuestionTage").GetComponent<QuestionManager>();
+
+
 
         InitializeGame();
     }
@@ -77,7 +83,8 @@ public class GameManager : MonoBehaviour
     public void InitializeGame() 
     {
         imageManagerScript.toggleActive(false);
-        questionManagerScript.toggleAnchorSize(true);
+        textScrollerScript.toggleScrollerAnchorSize(true);
+        //textScrollerContentScript.toggleScrollerAnchorSize(true);
 
         rootNode = new Node(0);
         focusNode = rootNode;
@@ -89,6 +96,11 @@ public class GameManager : MonoBehaviour
         playerObject.GetComponent<JSONWrite>().myPlayer.strength = loadedData.strength;
         focusNode = SearchByID(loadedData.nodeid);
         UpdateFromNode(focusNode);
+        if(focusNode.ImageTitle != null) 
+        {
+            imageManagerScript.toggleActive(true);
+            textScrollerScript.toggleScrollerAnchorSize(false);
+        }
     }
 
     void TaskOnClick0()
@@ -102,14 +114,15 @@ public class GameManager : MonoBehaviour
             if (newimage != null)
             {
                 imageManagerScript.toggleActive(true);
-                questionManagerScript.toggleAnchorSize(false);
+                textScrollerScript.toggleScrollerAnchorSize(false);
                 imageManagerScript.changeImage(newimage);
             }
         }
         else
         {
             imageManagerScript.toggleActive(false);
-            questionManagerScript.toggleAnchorSize(true);
+            textScrollerScript.toggleScrollerAnchorSize(true);
+
         }
 
 
@@ -133,14 +146,14 @@ public class GameManager : MonoBehaviour
             if(newimage != null) 
             {
                 imageManagerScript.toggleActive(true);
-                questionManagerScript.toggleAnchorSize(false);
+                textScrollerScript.toggleScrollerAnchorSize(false);
                 imageManagerScript.changeImage(newimage);
             }
         }
         else
         {
             imageManagerScript.toggleActive(false);
-            questionManagerScript.toggleAnchorSize(true);
+            textScrollerScript.toggleScrollerAnchorSize(true);
         }
 
         if (Btn1.interactable != false || focusNode.C1[3] != "Null" || focusNode.C1[3] != "")
@@ -161,14 +174,15 @@ public class GameManager : MonoBehaviour
             if (newimage != null)
             {
                 imageManagerScript.toggleActive(true);
-                questionManagerScript.toggleAnchorSize(false);
+                textScrollerScript.toggleScrollerAnchorSize(false);
                 imageManagerScript.changeImage(newimage);
             }
         }
         else
         {
             imageManagerScript.toggleActive(false);
-            questionManagerScript.toggleAnchorSize(true);
+            textScrollerScript.toggleScrollerAnchorSize(true);
+
         }
 
         if (Btn2.interactable != false || focusNode.C2[3] != null || focusNode.C2[3] != "")
@@ -189,14 +203,14 @@ public class GameManager : MonoBehaviour
             if (newimage != null)
             {
                 imageManagerScript.toggleActive(true);
-                questionManagerScript.toggleAnchorSize(false);
+                textScrollerScript.toggleScrollerAnchorSize(false);
                 imageManagerScript.changeImage(newimage);
             }
         }
         else
         {
             imageManagerScript.toggleActive(false);
-            questionManagerScript.toggleAnchorSize(true);
+            textScrollerScript.toggleScrollerAnchorSize(true);
         }
 
         if (Btn3.interactable != false || focusNode.C3[3] != null || focusNode.C3[3] != "")
@@ -217,14 +231,14 @@ public class GameManager : MonoBehaviour
             if (newimage != null)
             {
                 imageManagerScript.toggleActive(true);
-                questionManagerScript.toggleAnchorSize(false);
+                textScrollerScript.toggleScrollerAnchorSize(false);
                 imageManagerScript.changeImage(newimage);
             }
         }
         else
         {
             imageManagerScript.toggleActive(false);
-            questionManagerScript.toggleAnchorSize(true);
+            textScrollerScript.toggleScrollerAnchorSize(true);
         }
 
         if (Btn4.interactable != false || focusNode.C4[3] != null || focusNode.C4[3] != "")
@@ -240,9 +254,10 @@ public class GameManager : MonoBehaviour
     private void UpdateFromNode(Node node) 
     {
         
-        
         title.text = node.Title;
         question.text = node.Question;
+
+        CheckAndAdjustTextSize(question.text);
 
         if (node.C0 != null)
         {
@@ -854,7 +869,6 @@ public class GameManager : MonoBehaviour
             focus = focus.Defnext;
         } while (focus != null);
 
-        //Debug.Log("Its returning Null");
         return null;
     }
 
@@ -1090,6 +1104,41 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    public void CheckAndAdjustTextSize(string input) 
+    {
+        if(input == null) 
+        { return; }
+        if(input.Length > 900) 
+        {
+            questionScript.adjustTextboxHeight(3);
+            scrollbar.transform.localScale = new Vector2(1,1);
+        }
+        else 
+        if (input.Length > 700) 
+        {
+            if(focusNode.ImageTitle == null)
+            {
+                questionScript.adjustTextboxHeight(2);
+            }
+            else 
+            {
+                questionScript.adjustTextboxHeight(3);
+            }
+            scrollbar.transform.localScale = new Vector2(1, 1);
+        }
+        else
+        if (input.Length > 500 || focusNode.ImageTitle != null)
+        {
+            questionScript.adjustTextboxHeight(1);
+            scrollbar.transform.localScale = new Vector2(1, 1);
+        }
+        else
+        {
+            questionScript.adjustTextboxHeight(0);
+            scrollbar.transform.localScale = new Vector2(0, 0);
+        }
+    }
+
     public class SaveData 
     {
         public int nodeid;
@@ -1105,7 +1154,6 @@ public class GameManager : MonoBehaviour
         {
             string json = r.ReadToEnd();
             SaveData listdata = JsonConvert.DeserializeObject<SaveData>(json);
-            //Debug.Log(listdata.nodeid);
             return listdata;
         }
     }

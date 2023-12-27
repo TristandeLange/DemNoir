@@ -1,5 +1,5 @@
-﻿ 0 
-{The following questions will help determine the kind of person you come to know yourself as in the coming months, answer as honestly as you can, and a House of Arcana will be given to you at the end.} Power comes from...            Choose one:
+﻿0 
+(The following questions will help determine the kind of person you come to know yourself as in the coming months, answer as honestly as you can, and a House of Arcana will be given to you at the end.) Power comes from...            Choose one:
 Personal Power
 Null
 > What you know
@@ -1079,6 +1079,343 @@ Null
 Strength = 1 Heart = 1 Sneakiness = 3 Mind = 5
 Null
 28
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+42
+This is the House of Arcana that Archetypes your personality. The House of Strength is more than raw power. It is personal power tempered by the ability to talk things out and understand others in the write situations that don't require it. - "They're either getting your fist or your open hand, anyone ought to choose how to approach you wisely."
+House Of Strength
+Strength
+> Onward
+Null
+Null
+Null
+Null
+41
+43
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+43
+This is the House of Arcana that Archetypes your personality. The House of Death is characterized with confrontation. Whether by direct upfront confrontation, or sly maneuvers, no one is in good standing if against you as you meet problems with a clear focus on coming out on top. - "No one escapes Death."
+House of Death
+Death
+> Onward
+Null
+Null
+Null
+Null
+42
+44
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+44
+This is the House of Arcana that Archetypes your personality. The House of Justice is raw power tempered by intellect and knowledge. Your instinct is to take action and stand your ground, but you look to make that decision an informed one.  Moreover, if standing your ground isn't possible, you'll fall back on your intellect and knowledge to come out of a given situation. - "What's right is right, what's wrong is wrong, and I usually know which is which."
+House of Justice
+Justice
+> Onward
+Null
+Null
+Null
+Null
+43
+45
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+45
+This is the House of Arcana that Archetypes your personality. The House of The Devil is about offers one can't refuse. Social solutions are your forte, but you're no push-over. If anyone takes you for someone that can't knuckle down in more heated confrontation, they've got the wrong person. - "They're great company, but not someone to mess with."
+House of The Devil
+TheDevil
+> Onward
+Null
+Null
+Null
+Null
+44
+46
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+46
+This is the House of Arcana that Archetypes your personality. The House of the Fool is mainly about friendly appearances with an unseen cunning. Your natural instinct, in times of conflict, is to hash things out socially. However, if that falls through, you have other ways of dealing with your problems. Even if no one suspects it. - "It takes a cunning actor to play the Fool."
+House of The Fool
+TheFool
+> Onward
+Null
+Null
+Null
+Null
+45
+47
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+47
+This is the House of Arcana that Archetypes your personality. The House of the Empress is about social skill informed by intellect. In times of conflict, members of this house rely on their social skills to solve problems. Furthermore, if those skills fail them, they rely on their intellect and prior knowledge to resolve situations. - "We can talk this out, love, but don't force me to make you look stupid."
+House of The Empress
+TheEmpress
+> Onward
+Null
+Null
+Null
+Null
+46
+48
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+48
+This is the House of Arcana that Archetypes your personality. The House of the Chariot is about decisive motion. Your natural instinct is to dance around problems in clever ways, confounding anyone or anything that might challenge you. However, if met with an impassable object, you have no issue charging through them or remaining unmoved in what you decide as an individual. - "If you're blocking me, I will soon defeat you. I will build a bridge above you. I will tunnel underneath you. If need be, I'll go through you."
+House of The Chariot
+TheChariot
+> Onward
+Null
+Null
+Null
+Null
+47
+49
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+49
+This is the House of Arcana that Archetypes your personality. The House of The Hanged Man is about mischief. Members of this house tend to find creative solutions to problems that avoid direct confrontation. However, if caught in their anticks, members of this house fall back on their roguish charm to see them through. - "You take me for an amateur?! Yes! This was all part of the plan...now cut me down before the Dasfara show up."
+House of The Hanged Man
+TheHangedMan
+> Onward
+Null
+Null
+Null
+Null
+48
+50
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+50
+This is the House of Arcana that Archetypes your personality. The House of The High Priestess possesses intuition, mystery and sensuality combined with common sense. Your natural instinct is to avoid direct confrontation in favor of creative solutions informed by your intellect and common sense. - "If only they knew what I know, but I won't be the one to tell them."
+House of The High Priestess
+TheHighPriestess
+> Onward
+Null
+Null
+Null
+Null
+49
+51
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+51
+This is the House of Arcana that Archetypes your personality. The House of The Hermit is about intellect and wisdom with a backbone. Your immediate solution to problems is your intellect, however if that fails you, you have the force of personality to stand your ground. - "I've already explained it to you. Are we done?"
+House of The Hermit
+TheHermit
+> Onward
+Null
+Null
+Null
+Null
+50
+52
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+52
+This is the House of Arcana that Archetypes your personality. The House of The Emperor is about imparting knowledge. You lead with your intellect and attempt to facilitate that, both in hardship doing so and success, with your natural social ability as a support in that endeavor. - "You're doing that wrong, let me show you."
+House of The Emperor
+TheEmperor
+> Onward
+Null
+Null
+Null
+Null
+51
+53
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+53
+This is the House of Arcana that Archetypes your personality. The House of The Magician is characterized as the carrier of secret knowledge. Your natural instinct is to rely on your intellect and prior knowledge to solve your problems. However, if those can't solve a problem at its face, your solutions will go unseen or unheard openly. That's the magic of a magician. - "Okay. See what happens."
+House of The Magician
+TheMagician
+> Onward
+Null
+Null
+Null
+Null
+52
+54
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+54
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+53
+Null
+Null
+Null
+Null
 Null
 Null
 Null

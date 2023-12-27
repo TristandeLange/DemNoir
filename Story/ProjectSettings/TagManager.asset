@@ -6,6 +6,9 @@ TagManager:
   tags:
   - MainImage
   - QuestionTage
+  - Music
+  - TextScroller
+  - TextScrollerContent
   layers:
   - Default
   - TransparentFX

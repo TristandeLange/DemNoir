@@ -1,32 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class QuestionManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+{  
 
-    // Update is called once per frame
-    void Update()
+    public void adjustTextboxHeight(int val) 
     {
+        switch (val) 
+        { 
         
-    }
+            case 0:
+                gameObject.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0);
+                gameObject.GetComponent<TMP_Text>().verticalAlignment = VerticalAlignmentOptions.Middle;
+                break;
 
-    //if given True, enlarge anchors, if set false, shrink them
-    public void toggleAnchorSize(bool b)
-    {
-        if(b) 
-        {
-            gameObject.GetComponent<RectTransform>().anchorMax = new Vector2(1,0.74f); 
+            case 1:
+                gameObject.GetComponent<RectTransform>().anchorMin = new Vector2(0, -0.2f);
+                gameObject.GetComponent<TMP_Text>().verticalAlignment = VerticalAlignmentOptions.Top;
+                break;
+
+            case 2:
+                gameObject.GetComponent<RectTransform>().anchorMin = new Vector2(0, -0.6f);
+                gameObject.GetComponent<TMP_Text>().verticalAlignment = VerticalAlignmentOptions.Top;
+                break;
+
+            case 3:
+                gameObject.GetComponent<RectTransform>().anchorMin = new Vector2(0, -1f);
+                gameObject.GetComponent<TMP_Text>().verticalAlignment = VerticalAlignmentOptions.Top;
+                break;
+
+            default:
+
+                break;
+        
         }
-        else 
+        
+    }
+
+
+    public void toggleScrollerAnchorSize(bool b)
+    {
+        if (b)
+        {
+            gameObject.GetComponent<RectTransform>().anchorMax = new Vector2(1, 0.74f);
+        }
+        else
         {
             gameObject.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.74f);
         }
     }
+
 
 }

@@ -36,7 +36,7 @@ public class PopupManager : MonoBehaviour
     void TaskOnClickStats() 
     {
         statScreen.SetActive(true);
-        statText.text = "Knowledge: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.mind + "\nCharm: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.heart + "\nFinesse: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness + "\nMuscle: " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.strength;
+        statText.text = "Knowledge " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.mind + "\nCharm " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.heart + "\nFinesse " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness + "\nMuscle " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.strength;
     }
 
     void TaskOnClickSettings()
