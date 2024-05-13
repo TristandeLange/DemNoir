@@ -36,7 +36,7 @@ public class JSONWrite : MonoBehaviour
         string strOutput = JsonUtility.ToJson(myPlayer);
 
         File.WriteAllText(Application.dataPath + "/resources/text.json", strOutput);
-
+        
 
     }
     

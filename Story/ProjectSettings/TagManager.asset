@@ -9,6 +9,7 @@ TagManager:
   - Music
   - TextScroller
   - TextScrollerContent
+  - ChoiceBackground
   layers:
   - Default
   - TransparentFX
