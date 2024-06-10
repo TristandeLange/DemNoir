@@ -17,6 +17,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using System.Text.RegularExpressions;
+using static UnityEditor.Progress;
 //using static JSONWrite;
 
 public class GameManager : MonoBehaviour
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
     private TextAsset graphText;
     [SerializeField]
     private TextAsset saveDataText;
+
+    public InventoryScript inventory;
 
     private ImageManager imageManagerScript;
     private QuestionManager textScrollerScript;
@@ -460,6 +463,15 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
+            case "Item":
+
+                adjustInv(words);
+
+                //This is just to make the fact that item data inputs are 4 strings long not actually matter
+                string[] temp = new string[words.Length - 1];
+                Array.Copy(words, words.GetLowerBound(0) + 1, temp, temp.GetLowerBound(0), words.Length - 1);
+                words = temp;
+                break;
             default:
                 Debug.Log("incorrect stat option");
                 break;
@@ -478,6 +490,9 @@ public class GameManager : MonoBehaviour
                 StatUpdate(text);
             }
         }
+
+        return;
+
     }
 
     //Checks if the player has the proper stats, either >= or < the requested stat restriction
@@ -490,6 +505,7 @@ public class GameManager : MonoBehaviour
         }
         string[] words = text.Split(' ');
         Int32.TryParse(words[2], out int value);
+        
         switch (words[0])
         {
 
@@ -589,6 +605,15 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
+
+            case "Item":
+
+                if (itemHeld(words[1]) >= value) 
+                {
+                    return true;
+                }
+
+                break;
             default:
                 Debug.Log("incorrect stat option : " + words[0]);
                 break;
@@ -610,6 +635,55 @@ public class GameManager : MonoBehaviour
 
         return false;
     }
+
+    public int itemHeld(string itemID) 
+    {
+        List<GameObject> items = inventory.items;
+        foreach(GameObject item in items) 
+        {
+            if (item.GetComponent<ItemScript>().getId() == Convert.ToInt32(itemID)) 
+            {
+                return item.GetComponent<ItemScript>().getCount();
+            }
+        }
+
+        return 0;
+    }
+
+    public void adjustInv(string[] itemData) 
+    {
+        List<GameObject> items = inventory.items;
+        foreach (GameObject item in items) 
+        {
+            if(item.GetComponent<ItemScript>().getId() == Convert.ToInt32(itemData[1])) 
+            {   //If the player already has the item in their inventory
+
+                if (itemData[2] == "+")
+                {
+                    item.GetComponent<ItemScript>().setCount(item.GetComponent<ItemScript>().getCount() + Convert.ToInt32(itemData[3]));
+                }
+                else
+                if (itemData[2] == "-")
+                {
+                    
+                    item.GetComponent<ItemScript>().setCount(item.GetComponent<ItemScript>().getCount() - Convert.ToInt32(itemData[3]));
+                    
+                }
+                return;
+            }
+        }
+        //The object doesn't exist in the inventory so either add it, or do nothing because I'm not having negative items
+        if (itemData[2] == "+") 
+        {
+            GameObject newitem = Resources.Load<GameObject>("ItemDefaults/Item" + itemData[1]);
+            newitem.GetComponent<ItemScript>().setCount(itemData[3]);
+            inventory.items.Add(newitem);
+        }
+        
+        return;
+    }
+
+
 
     public void CheckAndAdjustTextSize(string input)
     {

@@ -13,6 +13,9 @@ public class PopupManager : MonoBehaviour
     public TMP_Text statText;
     public TMP_Text settingsText;
 
+    [SerializeField]
+    private InventoryScript inventory;
+
     public UnityEngine.UI.Button statsBtn;
     public UnityEngine.UI.Button settingsBtn;
 

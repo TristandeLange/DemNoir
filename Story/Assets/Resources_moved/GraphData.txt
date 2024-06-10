@@ -10,10 +10,10 @@ Null
 Null
 1 
 1  
-Mind + 2 Strength - 1 Sneakiness - 1 Heart - 1  
+Mind + 2 Strength - 1 Sneakiness - 1 Heart - 1 Item 2 + 1
 Null
 1 
-Mind - 1 Strength - 1 Sneakiness - 1 Heart + 2  
+Mind - 1 Strength - 1 Sneakiness - 1 Heart + 2
 Null 
 1  
 Mind - 1 Strength - 1 Sneakiness + 2 Heart - 1  
