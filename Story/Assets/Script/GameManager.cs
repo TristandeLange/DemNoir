@@ -17,7 +17,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using System.Text.RegularExpressions;
-using static UnityEditor.Progress;
+//using static UnityEditor.Progress;
 //using static JSONWrite;
 
 public class GameManager : MonoBehaviour
@@ -101,10 +101,12 @@ public class GameManager : MonoBehaviour
         focusNode = rootNode;
         AssembleGraph();
         SaveData loadedData = LoadJSON();
-        playerObject.GetComponent<JSONWrite>().myPlayer.mind = loadedData.mind;
+        playerObject.GetComponent<JSONWrite>().myPlayer.knowledge = loadedData.knowledge;
+        playerObject.GetComponent<JSONWrite>().myPlayer.charm = loadedData.charm;
+        playerObject.GetComponent<JSONWrite>().myPlayer.finesse = loadedData.finesse;
+        playerObject.GetComponent<JSONWrite>().myPlayer.muscle = loadedData.muscle;
         playerObject.GetComponent<JSONWrite>().myPlayer.heart = loadedData.heart;
-        playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness = loadedData.sneakiness;
-        playerObject.GetComponent<JSONWrite>().myPlayer.strength = loadedData.strength;
+        playerObject.GetComponent<JSONWrite>().myPlayer.sense = loadedData.sense;
         focusNode = SearchByID(loadedData.nodeid);
         UpdateFromNode(focusNode);
         if (focusNode.ImageTitle != null)
@@ -402,18 +404,64 @@ public class GameManager : MonoBehaviour
         switch (words[0])
         {
 
-            case "Mind":
+            case "Knowledge":
                 if (words[1] == "+")
                 {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.mind += value;
+                    playerObject.GetComponent<JSONWrite>().myPlayer.knowledge += value;
                 }
                 else if (words[1] == "-")
                 {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.mind -= value;
+                    playerObject.GetComponent<JSONWrite>().myPlayer.knowledge -= value;
                 }
                 else if (words[1] == "e")
                 {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.mind = value;
+                    playerObject.GetComponent<JSONWrite>().myPlayer.knowledge = value;
+                }
+
+                break;
+            case "Charm":
+                if (words[1] == "+")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.charm += value;
+                }
+                else if (words[1] == "-")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.charm -= value;
+                }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.charm = value;
+                }
+
+                break;
+            case "Finesse":
+                if (words[1] == "+")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.finesse += value;
+                }
+                else if (words[1] == "-")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.finesse -= value;
+                }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.finesse = value;
+                }
+
+                break;
+            case "Muscle":
+                if (words[1] == "+")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.muscle += value;
+
+                }
+                else if (words[1] == "-")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.muscle -= value;
+                }
+                else if (words[1] == "e")
+                {
+                    playerObject.GetComponent<JSONWrite>().myPlayer.muscle = value;
                 }
 
                 break;
@@ -421,6 +469,7 @@ public class GameManager : MonoBehaviour
                 if (words[1] == "+")
                 {
                     playerObject.GetComponent<JSONWrite>().myPlayer.heart += value;
+
                 }
                 else if (words[1] == "-")
                 {
@@ -432,37 +481,23 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
-            case "Sneakiness":
+            case "Sense":
                 if (words[1] == "+")
                 {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness += value;
-                }
-                else if (words[1] == "-")
-                {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness -= value;
-                }
-                else if (words[1] == "e")
-                {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness = value;
-                }
-
-                break;
-            case "Strength":
-                if (words[1] == "+")
-                {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.strength += value;
+                    playerObject.GetComponent<JSONWrite>().myPlayer.sense += value;
 
                 }
                 else if (words[1] == "-")
                 {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.strength -= value;
+                    playerObject.GetComponent<JSONWrite>().myPlayer.sense -= value;
                 }
                 else if (words[1] == "e")
                 {
-                    playerObject.GetComponent<JSONWrite>().myPlayer.strength = value;
+                    playerObject.GetComponent<JSONWrite>().myPlayer.sense = value;
                 }
 
                 break;
+
             case "Item":
 
                 adjustInv(words);
@@ -509,24 +544,96 @@ public class GameManager : MonoBehaviour
         switch (words[0])
         {
 
-            case "Mind":
+            case "Knowledge":
                 if (words[1] == "+")
                 {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.mind >= value)
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.knowledge >= value)
                     {
                         return true;
                     }
                 }
                 else if (words[1] == "-")
                 {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.mind < value)
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.knowledge < value)
                     {
                         return true;
                     }
                 }
                 else if (words[1] == "=")
                 {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.mind == value)
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.knowledge == value)
+                    {
+                        return true;
+                    }
+                }
+
+                break;
+            case "Charm":
+                if (words[1] == "+")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.charm >= value)
+                    {
+                        return true;
+                    }
+                }
+                else if (words[1] == "-")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.charm < value)
+                    {
+                        return true;
+                    }
+                }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.charm == value)
+                    {
+                        return true;
+                    }
+                }
+
+                break;
+            case "Finesse":
+                if (words[1] == "+")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.finesse >= value)
+                    {
+                        return true;
+                    }
+                }
+                else if (words[1] == "-")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.finesse < value)
+                    {
+                        return true;
+                    }
+                }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.finesse == value)
+                    {
+                        return true;
+                    }
+                }
+
+                break;
+            case "Muscle":
+                if (words[1] == "+")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.muscle >= value)
+                    {
+                        return true;
+                    }
+                }
+                else if (words[1] == "-")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.muscle < value)
+                    {
+                        return true;
+                    }
+                }
+                else if (words[1] == "=")
+                {
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.muscle == value)
                     {
                         return true;
                     }
@@ -557,48 +664,24 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
-            case "Sneakiness":
+            case "Sense":
                 if (words[1] == "+")
                 {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness >= value)
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sense >= value)
                     {
                         return true;
                     }
                 }
                 else if (words[1] == "-")
                 {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness < value)
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sense < value)
                     {
                         return true;
                     }
                 }
                 else if (words[1] == "=")
                 {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness == value)
-                    {
-                        return true;
-                    }
-                }
-
-                break;
-            case "Strength":
-                if (words[1] == "+")
-                {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.strength >= value)
-                    {
-                        return true;
-                    }
-                }
-                else if (words[1] == "-")
-                {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.strength < value)
-                    {
-                        return true;
-                    }
-                }
-                else if (words[1] == "=")
-                {
-                    if (playerObject.GetComponent<JSONWrite>().myPlayer.strength == value)
+                    if (playerObject.GetComponent<JSONWrite>().myPlayer.sense == value)
                     {
                         return true;
                     }
@@ -614,6 +697,7 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
+
             default:
                 Debug.Log("incorrect stat option : " + words[0]);
                 break;
@@ -669,11 +753,25 @@ public class GameManager : MonoBehaviour
                     item.GetComponent<ItemScript>().setCount(item.GetComponent<ItemScript>().getCount() - Convert.ToInt32(itemData[3]));
                     
                 }
+                else
+                if (itemData[2] == "=")
+                {
+
+                    item.GetComponent<ItemScript>().setCount(Convert.ToInt32(itemData[3]));
+
+                }
                 return;
             }
         }
         //The object doesn't exist in the inventory so either add it, or do nothing because I'm not having negative items
         if (itemData[2] == "+") 
+        {
+            GameObject newitem = Resources.Load<GameObject>("ItemDefaults/Item" + itemData[1]);
+            newitem.GetComponent<ItemScript>().setCount(itemData[3]);
+            inventory.items.Add(newitem);
+        }
+        else 
+        if(itemData[2] == "=") 
         {
             GameObject newitem = Resources.Load<GameObject>("ItemDefaults/Item" + itemData[1]);
             newitem.GetComponent<ItemScript>().setCount(itemData[3]);
@@ -734,7 +832,7 @@ public class GameManager : MonoBehaviour
             Int32.TryParse(dataSet[i], out int id); //sets id from file
             if ((focus = SearchByID(id)) == null) //checks if the node already exists and if it does, sets it, or makes it a new node.
             {
-                Debug.Log("new node is made of id: " + id);
+                //Debug.Log("new node is made of id: " + id);
                 focus = new Node(id);
             }
             i++;
@@ -1008,291 +1106,18 @@ public class GameManager : MonoBehaviour
 
         }
 
-        /*string filepath = "Assets/Resources/GraphData.txt"; //this works!!!!!!
-        try
-        {
-        using (StreamReader sr = new StreamReader(filepath))
-            {
-                //int i = 0;
-                while ((line = sr.ReadLine()) != "endgame" || line == null)
-                {
-                    
-                    line = line.Trim();
-                    Int32.TryParse(line, out int id); //sets id from file
-                    if ((focus = SearchByID(id)) == null) //checks if the node already exists and if it does, sets it, or makes it a new node.
-                    {
-                        focus = new Node(id);
-                    }
-                    
-                    line = sr.ReadLine();   //reads question
-                    line = line.Trim();
-                    focus.Question = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads title
-                    line = line.Trim();
-                    focus.Title = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads imagetitle
-                    line = line.Trim();
-                    focus.ImageTitle = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads C0s
-                    line = line.Trim();
-                    focus.C0[0] = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads C1s
-                    line = line.Trim();
-                    focus.C1[0] = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads C2s
-                    line = line.Trim();
-                    focus.C2[0] = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads C3s
-                    line = line.Trim();
-                    focus.C3[0] = StringNullCheck(line);
-
-                    line = sr.ReadLine();   //reads C4s
-                    line = line.Trim();
-                    focus.C4[0] = StringNullCheck(line);
-
-                    //works properly up to this point, no stall or crash
-                    
-                    //checks and sets prev
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)    //determine if there is no prev defined
-                    {
-                        Int32.TryParse(line, out id);   //change string to int
-                        if ((temp = SearchByID(id)) != null)    //if node with id exists, set temp to it
-                        {
-                            focus.Prev = temp;
-                        }
-                        else
-                        {
-                            focus.Prev = new Node(id);  //this whole section might be unnecessary if the prev always exists
-                        }
-                    }
-                    else
-                    {
-                        focus.Prev = null;  //there is no prev so set it to null
-                    }
-                    //checks and sets default next
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)    //determine if there is no defnext defined
-                    {
-                        Int32.TryParse(line, out id);   //change string to int
-                        if ((temp = SearchByID(id)) != null)    //if node with id exists, set temp to it
-                        {
-                            focus.Defnext = temp;
-                        }
-                        else
-                        {
-                            focus.Defnext = new Node(id);   //adds a new node to the tree (through defnext)
-                        }
-                    }
-                    else
-                    {
-                        focus.Defnext = null;  //there is no defnext so set it to null
-                    }
-
-                    //checks and sets c0 node id -----------------------------------------------------------------------------------------------------
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C0[1] = line;
-                  
-                    }
-                    else
-                    {
-                        focus.C0[1] = null;
-                    }
-                    //checks and sets c0 stat changes
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C0[3] = line;
-                    }
-                    else
-                    {
-                        focus.C0[3] = null;
-                    }
-                    //checks and sets c0 stat restrictioms
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C0[2] = line;
-                    }
-                    else
-                    {
-                        focus.C0[2] = null;
-                    }
-
-                    //checks and sets c1 node id
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C1[1] = line;
-                    }
-                    else
-                    {
-                        focus.C1[1] = null;
-                    }
-                    //checks and sets c1 stat changes
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C1[3] = line;
-                    }
-                    else
-                    {
-                        focus.C1[3] = null;
-                    }
-                    //checks and sets c1 stat restrictioms
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C1[2] = line;
-                    }
-                    else
-                    {
-                        focus.C1[2] = null;
-                    }
-
-                    //checks and sets c2 node id
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C2[1] = line;
-                    }
-                    else
-                    {
-                        focus.C2[1] = null;
-                    }
-                    //checks and sets c2 stat changes
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C2[3] = line;
-                    }
-                    else
-                    {
-                        focus.C2[3] = null;
-                    }
-                    //checks and sets c2 stat restrictioms
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C2[2] = line;
-                    }
-                    else
-                    {
-                        focus.C2[2] = null;
-                    }
-
-                    //checks and sets c3 node id
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C3[1] = line;
-                    }
-                    else
-                    {
-                        focus.C3[1] = null;
-                    }
-                    //checks and sets c3 stat changes
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C3[3] = line;
-                    }
-                    else
-                    {
-                        focus.C3[3] = null;
-                    }
-                    //checks and sets c3 stat restrictioms
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C3[2] = line;
-                    }
-                    else
-                    {
-                        focus.C3[2] = null;
-                    }
-
-                    //checks and sets c4 node id
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C4[1] = line;
-                    }
-                    else
-                    {
-                        focus.C4[1] = null;
-                    }
-                    //checks and sets c4 stat changes
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C4[3] = line;
-                    }
-                    else
-                    {
-                        focus.C4[3] = null;
-                    }
-                    //checks and sets c4 stat restrictioms
-                    line = sr.ReadLine();
-                    line = line.Trim();
-                    if (StringNullCheck(line) != null)
-                    {
-                        focus.C4[2] = line;
-                    }
-                    else
-                    {
-                        focus.C4[2] = null;
-                    }
-
-
-                }
-                sr.Close();
-            }
-            
-        }
-        catch (Exception e)
-        {
-            //so far it get here but no message is shown in the console in unity for some reason
-            //c3s.text = "it does not read the file!";
-            Console.WriteLine("The File could not be read:");
-            Console.WriteLine(e.Message);
-        }*/
-
-
     }
 
 
     public class SaveData 
     {
         public int nodeid;
-        public int mind;
+        public int knowledge;
+        public int charm;
+        public int finesse;
+        public int muscle;
         public int heart;
-        public int sneakiness;
-        public int strength;
+        public int sense;
     }
 
     public SaveData LoadJSON() 

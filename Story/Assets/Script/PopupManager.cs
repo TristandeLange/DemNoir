@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 //using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static GameManager;
 
 public class PopupManager : MonoBehaviour
@@ -39,7 +40,7 @@ public class PopupManager : MonoBehaviour
     void TaskOnClickStats() 
     {
         statScreen.SetActive(true);
-        statText.text = "Knowledge " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.mind + "\nCharm " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.heart + "\nFinesse " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness + "\nMuscle " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.strength;
+        statText.text = "Knowledge " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.knowledge + "\nCharm " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.charm + "\nFinesse " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.finesse + "\nMuscle " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.muscle + "\nHeart " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.heart + "\nSense " + GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sense;
     }
 
     void TaskOnClickSettings()
@@ -51,12 +52,15 @@ public class PopupManager : MonoBehaviour
     public void resetGamePosition() 
     {
         GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.nodeid = 0;
-        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.mind = 0;
+        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.knowledge = 5;
+        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.charm = 5;
+        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.finesse = 5;
+        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.muscle = 5;
         GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.heart = 0;
-        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sneakiness = 0;
-        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.strength = 0;
+        GameManager.playerObject.GetComponent<JSONWrite>().myPlayer.sense = 0;
         GameManager.playerObject.GetComponent<JSONWrite>().outputJSON();
 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         GameManager.InitializeGame();
     }
 

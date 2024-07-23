@@ -32,7 +32,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.8}
   m_AnchorMax: {x: 0.2, y: 1}
@@ -67,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 68e5a78013e33f247822a837e55b0ab4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1d4680a34ace8542a0b7f535de6297f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -89,8 +88,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c179416adc27004b89e1275321d4fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Item1
-  itemDesc: Generic Test Item
+  itemName: An Ill-Fit Ring
+  itemDesc: A wedding ring you know isn't yours, but makes your chest hurt
   id: 1
-  icon: {fileID: 21300000, guid: 68e5a78013e33f247822a837e55b0ab4, type: 3}
+  icon: {fileID: 21300000, guid: a1d4680a34ace8542a0b7f535de6297f, type: 3}
   count: 1

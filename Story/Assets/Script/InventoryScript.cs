@@ -25,13 +25,7 @@ public class InventoryScript : MonoBehaviour
     {
         if (this.isActiveAndEnabled)
         {
-            for (int i = 0; i < items.Count; i++)
-            {
-                if () //HEREEEE WORK HERE NEXT -------------------------------------------------------------
-                {
-                
-                }
-            }
+            
             refreshInventory();
 
         }
@@ -57,6 +51,13 @@ public class InventoryScript : MonoBehaviour
         float xanch = 0;
         float yanch = 1;
         RectTransform rTrans;
+
+        foreach (Transform child in this.transform)
+        {
+
+            Destroy(child.gameObject);
+
+        }
 
         foreach (var item in items)
         {

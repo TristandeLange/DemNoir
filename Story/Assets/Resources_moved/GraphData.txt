@@ -10,16 +10,16 @@ Null
 Null
 1 
 1  
-Mind + 2 Strength - 1 Sneakiness - 1 Heart - 1 Item 2 + 1
+Knowledge + 2 Muscle - 1 Finesse - 1 Charm - 1
 Null
 1 
-Mind - 1 Strength - 1 Sneakiness - 1 Heart + 2
+Knowledge - 1 Muscle - 1 Finesse - 1 Charm + 2
 Null 
 1  
-Mind - 1 Strength - 1 Sneakiness + 2 Heart - 1  
+Knowledge - 1 Muscle - 1 Finesse + 2 Charm - 1  
 Null 
 1  
-Mind - 1 Strength + 2 Sneakiness - 1 Heart - 1  
+Knowledge - 1 Muscle + 2 Finesse - 1 Charm - 1  
 Null 
 18  
 Null 
@@ -36,16 +36,16 @@ Null
 0 
 2 
 2 
-Strength + 1   
+Muscle + 1
 Null 
 2 
-Heart + 1   
+Charm + 1   
 Null 
 2 
-Sneakiness + 1   
+Finesse + 1   
 Null 
 2 
-Mind + 1   
+Knowledge + 1   
 Null 
 Null 
 Null 
@@ -62,16 +62,16 @@ Null
 1
 3
 3
-Strength + 1
+Muscle + 1
 Null
 3
-Heart + 1
+Charm + 1
 Null
 3
-Mind + 1
+Knowledge + 1
 Null
 3
-Sneakiness + 1
+Finesse + 1
 Null
 Null
 Null
@@ -88,16 +88,16 @@ Null
 2
 4
 4
-Strength + 1
+Muscle + 1
 Null
 4
-Sneakiness + 1
+Finesse + 1
 Null
 4
-Heart + 1
+Charm + 1
 Null
 4
-Mind + 1
+Knowledge + 1
 Null
 Null
 Null
@@ -114,16 +114,16 @@ Null
 3
 5
 5
-Mind + 1
+Knowledge + 1
 Null
 5
-Strength + 1
+Muscle + 1
 Null
 5
-Heart + 1
+Charm + 1
 Null
 5
-Sneakiness + 1
+Finesse + 1
 Null
 Null
 Null
@@ -140,16 +140,16 @@ Null
 4
 6
 6
-Strength + 2 Mind - 1 Sneakiness - 1 Heart - 1
+Muscle + 2 Knowledge - 1 Finesse - 1 Charm - 1
 Null
 7
-Strength - 1 Mind - 1 Sneakiness + 2 Heart - 1
+Muscle - 1 Knowledge - 1 Finesse + 2 Charm - 1
 Null
 8
-Strength - 1 Mind - 1 Sneakiness - 1 Heart + 2
+Muscle - 1 Knowledge - 1 Finesse - 1 Charm + 2
 Null
 9
-Strength - 1 Mind + 2 Sneakiness - 1 Heart - 1
+Muscle - 1 Knowledge + 2 Finesse - 1 Charm - 1
 Null
 Null
 Null
@@ -270,16 +270,16 @@ Null
 9
 11
 11
-Strength + 1
+Muscle + 1
 Null
 11
-Heart + 1
+Charm + 1
 Null
 11
-Mind + 1
+Knowledge + 1
 Null
 11
-Sneakiness + 1
+Finesse + 1
 Null
 Null
 Null
@@ -296,16 +296,16 @@ Null
 10
 12
 12
-Strength + 1
+Muscle + 1
 Null
 12
-Heart + 1
+Charm + 1
 Null
 12
-Mind + 1
+Knowledge + 1
 Null
 12
-Sneakiness + 1
+Finesse + 1
 Null
 Null
 Null
@@ -322,22 +322,22 @@ Null
 11
 13
 13
-Strength + 2 Sneakiness - 1 Mind - 1 Heart - 1
+Muscle + 2 Finesse - 1 Knowledge - 1 Charm - 1
 Null
 13
-Strength - 1 Sneakiness - 1 Mind - 1 Heart + 2
+Muscle - 1 Finesse - 1 Knowledge - 1 Charm + 2
 Null
 13
-Strength - 1 Sneakiness - 1 Mind + 2 Heart - 1
+Muscle - 1 Finesse - 1 Knowledge + 2 Charm - 1
 Null
 13
-Strength - 1 Sneakiness + 2 Mind - 1 Heart - 1
+Muscle - 1 Finesse + 2 Knowledge - 1 Charm - 1
 Null
 Null
 Null
 Null
 13
-Someone's Dominant Aspect is how they approach problems and conflict by default. Their likely immediate answer to most situations and as a result, their defacto strength. We've determined yours over the course of these questions. Your Dominant Aspect is...
+Someone's Dominant Aspect is how they approach problems and conflict by default. Their likely immediate answer to most situations and as a result, their defacto Muscle. We've determined yours over the course of these questions. Your Dominant Aspect is...
 Dominant Aspect
 Null
 > Muscle is my dominant aspect
@@ -349,16 +349,16 @@ Null
 14
 14
 Null
-Strength + 3
+Muscle + 3
 15
 Null
-Heart + 3
+Charm + 3
 16
 Null
-Sneakiness + 3
+Finesse + 3
 17
 Null
-Mind + 3
+Knowledge + 3
 Null
 Null
 Null
@@ -375,10 +375,10 @@ Null
 15
 22
 Null
-Strength - 8
+Muscle - 8
 23
-Strength = 7 Heart = 1 Sneakiness = 1 Mind = 1
-Strength + 8
+Muscle = 7 Charm = 1 Finesse = 1 Knowledge = 1
+Muscle + 8
 13
 Null
 Null
@@ -401,10 +401,10 @@ Null
 16
 24
 Null
-Heart - 8
+Charm - 8
 25
-Heart = 7 Mind = 1 Strength = 1 Sneakiness = 1
-Heart + 8
+Charm = 7 Knowledge = 1 Muscle = 1 Finesse = 1
+Charm + 8
 13
 Null
 Null
@@ -427,10 +427,10 @@ Null
 17
 26
 Null
-Sneakiness - 8
+Finesse - 8
 27
-Heart = 1 Mind = 1 Strength = 1 Sneakiness = 7
-Sneakiness + 8
+Charm = 1 Knowledge = 1 Muscle = 1 Finesse = 7
+Finesse + 8
 13
 Null
 Null
@@ -453,10 +453,10 @@ Null
 18
 28
 Null
-Mind - 8
+Knowledge - 8
 29
-Heart = 1 Mind = 7 Strength = 1 Sneakiness = 1
-Mind + 8
+Charm = 1 Knowledge = 7 Muscle = 1 Finesse = 1
+Knowledge + 8
 13
 Null
 Null
@@ -470,7 +470,7 @@ Null
 My House Arcana is...
 House Arcana
 Null
-> Strength
+> Muscle
 > Death
 > Justice
 > The Sun
@@ -478,16 +478,16 @@ Null
 17
 19
 42
-Strength = 5 Heart = 3 Sneakiness = 1 Mind = 1
+Muscle = 5 Charm = 3 Finesse = 1 Knowledge = 1
 Null
 43
-Strength = 5 Heart = 1 Sneakiness = 3 Mind = 1
+Muscle = 5 Charm = 1 Finesse = 3 Knowledge = 1
 Null
 44
-Strength = 5 Heart = 1 Sneakiness = 1 Mind = 3
+Muscle = 5 Charm = 1 Finesse = 1 Knowledge = 3
 Null
 23
-Strength = 7 Heart = 1 Sneakiness = 1 Mind = 1
+Muscle = 7 Charm = 1 Finesse = 1 Knowledge = 1
 Null
 19
 Null
@@ -504,16 +504,16 @@ Null
 18
 20
 45
-Strength = 3 Heart = 5 Sneakiness = 1 Mind = 1
+Muscle = 3 Charm = 5 Finesse = 1 Knowledge = 1
 Null
 46
-Strength = 1 Heart = 5 Sneakiness = 3 Mind = 1
+Muscle = 1 Charm = 5 Finesse = 3 Knowledge = 1
 Null
 47
-Strength = 1 Heart = 5 Sneakiness = 1 Mind = 3
+Muscle = 1 Charm = 5 Finesse = 1 Knowledge = 3
 Null
 25
-Strength = 1 Heart = 7 Sneakiness = 1 Mind = 1
+Muscle = 1 Charm = 7 Finesse = 1 Knowledge = 1
 Null
 20
 Null
@@ -530,16 +530,16 @@ Null
 19
 21
 48
-Strength = 3 Heart = 1 Sneakiness = 5 Mind = 1
+Muscle = 3 Charm = 1 Finesse = 5 Knowledge = 1
 Null
 49
-Strength = 1 Heart = 3 Sneakiness = 5 Mind = 1
+Muscle = 1 Charm = 3 Finesse = 5 Knowledge = 1
 Null
 50
-Strength = 1 Heart = 1 Sneakiness = 5 Mind = 3
+Muscle = 1 Charm = 1 Finesse = 5 Knowledge = 3
 Null
 27
-Strength = 1 Heart = 1 Sneakiness = 7 Mind = 1
+Muscle = 1 Charm = 1 Finesse = 7 Knowledge = 1
 Null
 21
 Null
@@ -556,16 +556,16 @@ Null
 19
 22
 51
-Strength = 3 Heart = 1 Sneakiness = 1 Mind = 5
+Muscle = 3 Charm = 1 Finesse = 1 Knowledge = 5
 Null
 52
-Strength = 1 Heart = 3 Sneakiness = 1 Mind = 5
+Muscle = 1 Charm = 3 Finesse = 1 Knowledge = 5
 Null
 53
-Strength = 1 Heart = 1 Sneakiness = 3 Mind = 5
+Muscle = 1 Charm = 1 Finesse = 3 Knowledge = 5
 Null
 29
-Strength = 1 Heart = 1 Sneakiness = 1 Mind = 7
+Muscle = 1 Charm = 1 Finesse = 1 Knowledge = 7
 Null
 18
 Null
@@ -583,13 +583,13 @@ Null
 23
 30
 Null
-Heart + 1
+Charm + 1
 31
 Null
-Sneakiness + 1
+Finesse + 1
 32
 Null
-Mind + 1
+Knowledge + 1
 Null
 Null
 Null
@@ -635,13 +635,13 @@ Null
 25
 33
 Null
-Strength + 1
+Muscle + 1
 34
 Null
-Sneakiness + 1
+Finesse + 1
 35
 Null
-Mind + 1
+Knowledge + 1
 Null
 Null
 Null
@@ -687,13 +687,13 @@ Null
 27
 36
 Null
-Strength + 1
+Muscle + 1
 37
 Null
-Heart + 1
+Charm + 1
 38
 Null
-Mind + 1
+Knowledge + 1
 Null
 Null
 Null
@@ -739,13 +739,13 @@ Null
 29
 39
 Null
-Strength + 1
+Muscle + 1
 40
 Null
-Heart + 1
+Charm + 1
 41
 Null
-Sneakiness + 1
+Finesse + 1
 Null
 Null
 Null
@@ -790,7 +790,7 @@ Null
 29
 31
 42
-Strength = 5 Heart = 3 Sneakiness = 1 Mind = 1
+Muscle = 5 Charm = 3 Finesse = 1 Knowledge = 1
 Null
 22
 Null
@@ -816,7 +816,7 @@ Null
 30
 32
 43
-Strength = 5 Heart = 1 Sneakiness = 3 Mind = 1
+Muscle = 5 Charm = 1 Finesse = 3 Knowledge = 1
 Null
 22
 Null
@@ -842,7 +842,7 @@ Null
 31
 33
 44
-Strength = 5 Heart = 1 Sneakiness = 1 Mind = 3
+Muscle = 5 Charm = 1 Finesse = 1 Knowledge = 3
 Null
 22
 Null
@@ -868,7 +868,7 @@ Null
 32
 34
 45
-Strength = 3 Heart = 5 Sneakiness = 1 Mind = 1
+Muscle = 3 Charm = 5 Finesse = 1 Knowledge = 1
 Null
 24
 Null
@@ -894,7 +894,7 @@ Null
 33
 35
 46
-Strength = 1 Heart = 5 Sneakiness = 1 Mind = 3
+Muscle = 1 Charm = 5 Finesse = 1 Knowledge = 3
 Null
 24
 Null
@@ -920,7 +920,7 @@ Null
 34
 36
 47
-Strength = 1 Heart = 5 Sneakiness = 1 Mind = 3
+Muscle = 1 Charm = 5 Finesse = 1 Knowledge = 3
 Null
 24
 Null
@@ -946,7 +946,7 @@ Null
 35
 37
 48
-Strength = 3 Heart = 1 Sneakiness = 5 Mind = 1
+Muscle = 3 Charm = 1 Finesse = 5 Knowledge = 1
 Null
 26
 Null
@@ -972,7 +972,7 @@ Null
 36
 38
 49
-Strength = 1 Heart = 3 Sneakiness = 5 Mind = 1
+Muscle = 1 Charm = 3 Finesse = 5 Knowledge = 1
 Null
 26
 Null
@@ -998,7 +998,7 @@ Null
 37
 39
 50
-Strength = 1 Heart = 1 Sneakiness = 5 Mind = 3
+Muscle = 1 Charm = 1 Finesse = 5 Knowledge = 3
 Null
 26
 Null
@@ -1024,7 +1024,7 @@ Null
 38
 40
 51
-Strength = 3 Heart = 1 Sneakiness = 1 Mind = 5
+Muscle = 3 Charm = 1 Finesse = 1 Knowledge = 5
 Null
 28
 Null
@@ -1050,7 +1050,7 @@ Null
 39
 41
 52
-Strength = 1 Heart = 3 Sneakiness = 1 Mind = 5
+Muscle = 1 Charm = 3 Finesse = 1 Knowledge = 5
 Null
 28
 Null
@@ -1076,7 +1076,7 @@ Null
 40
 42
 53
-Strength = 1 Heart = 1 Sneakiness = 3 Mind = 5
+Muscle = 1 Charm = 1 Finesse = 3 Knowledge = 5
 Null
 28
 Null
@@ -1403,15 +1403,198 @@ Null
 Null
 Null
 54
+Now that you have an idea of who you are, let's recollect where this journey started...         You've been stripped naked, beaten bloody, and extracted of your memories to where your Knowledge aches. That's how you find yourself at the base of the West Wall. It's the massive cement wall meant to keep criminals and the demonically possessed away from the pleasant society of Whispering Hollow. You're on the wrong side of it. Which means you've found your way into the Forgotten Slum. Most exiles never uncover their past lives. Most can't manage to remember their names, and you're hardly an exception there, but what you do have is something in your hands that shouldn't be there. In your filthy hand, you see:
+Exiled
 Null
-Null
-Null
-Null
-Null
-Null
-Null
+> A rag doll, with a small knife hidden inside, and the memory of a girl crying in your arms
+> A wedding ring you know isn't yours, but makes your chest hurt
+> A silk shirt stained with blood, and the memory of falling out of a window
+> A pair of broken glasses, and the memory of a burning clock-tower
 Null
 53
+55
+55
+Heart + 2 Finesse + 1 Item 0 + 1
+Null
+56
+Heart + 2 Charm + 1 Item 1 + 1
+Null
+57
+Sense + 2 Muscle + 1 Item 2 + 1
+Null
+58
+Sense + 2 Knowledge + 1 Item 3 + 1
+Null
+Null
+Null
+Null
+55
+There's a pang of sadness that clutches your chest when you sit there, staring at her. She's a worn rag-doll with red button eyes and a little white dress speckled with blood. The threads of your memory twist around each other enough for a glimpse into your past. There's a girl crying in your arms and the sound of sirens in the distance. You feel relieved, happy to see her, but dreading the words she says. She's asking you to leave, but it's too late. Holding the doll in your hands, at least you have an inkling of who you were.            New Item: A Rag Doll
+A Crying Doll
+Ragdoll
+>Your next few months..
+Null
+Null
+Null
+Null
+54
+56
+59
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+56
+It's a silver ring that's too tight to fit on your finger. You know it belongs to someone you have complicated feelings toward. There's a wave of sorrow and longing. There's anger, but affection there, too. The threads of your memory twist around each other enough for a glimpse into your past. Blood running over sheets. The sensation of your wrists bound and a name, your name, groaned out in pain. Holding the ring in your hand, at least you have an inkling of who you were.                      New Item: An Ill-fit Ring
+An Ill-Fit Ring
+Ill-FitRing
+>Your next few months..
+Null
+Null
+Null
+Null
+55
+57
+59
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+57
+It's a white silk shirt with an embroidered M on its breast. The M is sewn in black. Most of the shirt is covered in dried blood. You feel in the pit of your gut that that blood's yours. The threads of your memory twist around each other enough for a glimpse into your past. You see the M made up in fine silver, over a wooden door. It leads into a tall tower. You're rushing up a long flight of stairs and you remember being pushed out of a window. You must've been a tough son-of-a-bitch to survive that fall. Holding the ruined shirt in your hands, at least you have an inkling of who you were.                 New Item: A Bloody Shirt
+A Bloody Shirt
+BloodiedShirt
+>Your next few months..
+Null
+Null
+Null
+Null
+56
+58
+59
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+58
+They're Bronze glasses in a circular shape with the frame bent slightly and a lens cracked on the right side. The threads of your memory twist around each other enough for a glimpse into your past. Touching it makes your skin feel hot and tears well up in your eyes like you're staring a flame in the face. There's a burning clocktower you've known as your only home since childhood. Somewhere inside that burning building, someone is wailing your name. Holding the pair of broken glasses in your hands, at least you have an inkling of who you were.                  New Item: Broken Glasses
+Broken Glasses and Visions of Fire
+BrokenGlasses
+>Your next few months..
+Null
+Null
+Null
+Null
+57
+59
+59
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+59
+In the next three months, you wander the overcrowded streets of the West District long enough to find your place in this mess. You've made many decisions over that time, but the most important has been where you set down your hat. What part of the West District have you settled into?
+First Wanderings
+TheFool
+I settle into the Overhang, territory of the Urchin Families
+(In Progress)X I fell in with the Basilisks in the Central Rings
+(In Progress)X I fell in with the Gypsies and Sultans that roam throughout the rings, moving the grand Bazaar
+(In Progress)X I applied as a recruit of the Dasfara
+Null
+58
+60
+60
+Null
+Null
+59
+Null
+Null
+59
+Null
+Null
+59
+Null
+Null
+Null
+Null
+Null
+60
+For anyone looking to fade into the masses and pinch an opportunity or two without a watchful eye, the Urchin gang territory in the North is the place to be. I fell in with the Urchins and Bos in the Northern Outer Rings. They're a band of rebellious Exiles and bastards who refuse to give up their freedoms and bend the knee to either the Hollowed Order of Knights along the wall or the Basilisk Mafia of Devils that run the slum city. They also refuse to abide by the laws of the Grand Bazaar, where the deepest pockets wield absolute power. Every Urchin family, under the guidance of a Bo, usually an overgrown street child, holds a different creed. Though all stand united in their defiance of corrupt politics, some branches are more liberation-focused monasteries rather than others working as thief networks, or Devil Hunting fraternities. The balance is always precarious. Especially for these folk that sprint along the railings and rooftops of the District's spires.
+The Overhang
+TheOverhang
+Swear fealty to an Urching Gang
+(In Progress) Build a Shelter
+Perhaps I'll wander to other parts of the district...
+Null
+Null
+59
+61
+64
+Null
+Null
+60
+Null
+Null
+59
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+61
+Their three crime families that run the slum from the West district under the name of the Basilisk Broods. Each brood has a different racket, whether it be extortion and underground fighting rings, or infernal contracts as well as living weapon racketeering. It's undeniable that they wield the most power in the Forgotten Slum, not solely in the West, but rising in their ranks is not easy. By the time you reach the top from the bottom, you might be more monstrous than human. Everybody owes, and everybody pays; This is a common saying in Basilisk territory. Cobbled Ruins form the base of countless spire-shaped buildings. They line the streets, with their tops in constant construction. Men with swirling tattoos work atop scaffolding at impossible heights, welding black-framed paper walls to the topmost points. The tips of their fingers are superheated to a bright black blaze to weld the frames properly. Hulking thugs with bodies pushed to the limits of human muscle capacity patrol the streets. More than a few passers-by have the odd quirk in the eye color, or the wrong kind of limb, subtle hints at a soul contract defaulted. Still, sharply dressed Devils walk by with harems of sirens on their arms. The occasional Sultan of the gypsy troupes frequents these streets with their servants. Both of them are nobles of separate courts. One, wealthy in power. The other, wealthy in...wealth. The streets part as they walk through, and you're one of the shifting masses. Currently, you're just a pebble in a stream. You're surrounded by debt and damnation, but excess and lust, too. You'll need the sense to watch your surroundings and read a lying man's face, the muscle to defend yourself and exert your will, or the charm to talk your way through a brutal society built on contracts with steep costs and even steeper rewards. You'll need to sign a contract with one of the Basilisk Broods to make a living here. Which one do you approach?
+Basilisks, St. Charlemagne's Rest
+Null
+Ziv'Odd the Sulsmiths that craft in the prime spires.Sense, Soul-magic and Tether production
+Rok'Za the Sulbeasts that run fighting pits and handle both security as well as militia.Muscle, Fighting rings and Extorsion
+Do'Zen the contractors that persuade new souls to sign away part of their freedom for power. Charm, Contracts and Soul Exchange
+Null
+Null
+61
+63
 Null
 Null
 Null
@@ -1427,4 +1610,549 @@ Null
 Null
 Null
 Null
-endgame
+62
+Their merchants of the grand bazaar and the monetary power in the western district. They specialize in talking their way through conflict, keeping one step ahead of their opponents and using their finesse to navigate the turbulent streets of the West district. There's no set place that anyone can find the traveling troupes. They cart around in linked wagons of varied luxury, dependent on the success of the troupe and its sultan. Most troupes are a melting pot of backgrounds. Beastmen often run the security, the occasional Siren is a fine dancer, even a recovering nectar addict is a decent sideshow freak, but an Exile isn't predisposed to any role. So it's your decision about where you might fit. The Gypsy and Sultan troupes lead a turbulent life underscored by freedom above all else and the pursuit of monetary gain. You'll need the charm to navigate the complex politics of the Sultanate court, the sense to evaluate wares and make trades for several services, as well as the Finesse to pull a trick or two if the situation demands. There are plenty of traveling troupes all across the Western District. It' up to you to find one that might take you. The most important choice for anyone seeking to join this lifestyle is which role they attempt to earn rite of passage from. Which do you choose? Strength: Wealth
+Gypsies and Sultans
+Null
+Charm, Sultanate Politician
+Sense, Merchant on the Bazaar
+Finesse, Travelling Gypsy Troop
+Null
+Null
+61
+63
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+63
+, enlisted to a fort in the South. They're a branch of the knights who contain the forgotten slum this side of the wall. Dasfara are spies for the knights, specializing in the prosecution and arrest of demonic entities that step out of line.          (04/16)         Heart and Muscle             Strength: Equipment
+No Name
+Null
+Muscle
+Knowledge
+Humanity
+Null
+Null
+62
+64
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+64
+You've spent the past three months learning how to survive in a slum within slums. Of course, everything is for sale, and the price isn't always moral, but you manage to gain the Sense and Finesse to navigate that. You also develop the Heart to face all those hardships willingly. One day, while surveying the constantly moving streets of the slum, you're approached by a cloaked figure atop a rooftop.       "Evenin', chum." He says, "I have an offer."         He explains that he's willing to give you the location of a Bo in the outer rings and a letter of recommendation that'll give you a chance. Although you live in an abandoned shack above a gambling den, swearing loyalty to a Bo comes with benefits. You'll have a place to live, decent clothes to wear, and less of that gurgling emptiness in your gut.       To which Bo do you wish to swear loyalty?
+Swearing Fealty to an Urchin Family
+TheOverhang
+"King" Kaldun, Bo of the Empty Eyes Revolt, A Group of Revolutionaries
+(In progress) "Phantom" Shelby, Bo of the Striped Roses, A Band of Thieves
+(In progress) "Black-Eyed Devil" Nigel Bo of the Exorcists, A Group of Demon Hunters
+Null
+Null
+63
+65
+65
+Item 4 = 1
+Null
+64
+Null
+Null
+64
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+65
+When the cloaked figure points it out, after explaining just what it is, you find it hard to imagine this malnourished mess of a pub is the headquarters of the most powerful underground resistance the Forgotten Slum has ever seen. Tipsy bands of early teenage urchins stumble out of it in a constant rhythm. They sing shanties brought over from various lands and grab meat-bag prostitutes off the ruined walls regularly. Some take their services on the open dirt road. This looks like any other run-down pub in the outer rings, with the signature stench of piss and cheap beer. Is this the only line of defense against demon-beasts and in-scripted thugs that the Styx has? Regardless, your patron hands you a rolled-up sheet of leather with runes inscribed over its length. He nudges you toward the entrance with a hand that feels distinctly heavy.
+The Empty-Eyes Revolt
+TheBlueOverhang
+Go forward, into the pub
+Turn back and choose another Urchin Family
+Null
+Null
+Null
+64
+66
+66
+Null
+Null
+64
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+66
+A slumped man in tattered clothes sits slumped by the door. He holds a beer bottle in one hand, and a tin cup in the other as he asks every passerby for a spare silver, to which they all feign deafness. Stumbling in the homeless man's vague direction, his drunken eyes turn up to you.  "Spare a silver." He calls out, extending his beaten tin cup.
+Drunken Drifter
+TheHermit
+Drop a silver in his cup, and head into the pub
+Feign deafness like the rest, and head into the pub
+Null
+Null
+Null
+65
+67
+68
+Heart + 3
+Null
+67
+Heart - 3
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+67
+You enter the pub, grimacing at the thought of being shaken down, or guilted into giving away what little money you have. In the center of the pub's main room is a fighting ring in the form of a sandpit encircled with fist-sized stones. They all have runic symbols similar to the ones on the rolled-up length of leather your hooded patron gave you. Around this center are tables and roaring on-lookers in their seats. Meat bags are held in every odd lap and there's not a sober face in the circle. On the fringes are barmaids bringing rounds and recording bets. A bar to the offhand right sits under a burly tender with eyes in constant flame. The red shade of it matches a string of runes on his neck, but it's clear that he's the exception. Styx folk despise soul-magic practiced by the Devils to the South, and the tattooed runes are the trademark of their handiwork. So the tender either has the right favors or the right friends to be anywhere near the Styx, let alone a tender at a pub this rowdy. You can't throw a stone in the Styx without finding some poor bastard who lost their only love to a soul contract turn tits up. Speaking of which, taking a few steps closer to the center of the room, you see a full-fledged Rok'Za Red Devil in the ring. He's surrounded by three massive men, probably fixed to be a beat-down rather than a real match. This is probably some bastardization of the fighting pits the Rok'Za love to run. They must've underestimated the fighting spirit of a full-grown Rok'Za because the 8-foot-tall behemoth flings off a 6-foot man with a single arm as you approach. He'll likely tear the three of them to pieces. Like a shock through a rail fence, the circle of on-lookers wails out in time with a massive blow from the Rok'Za's fist against the biggest man's face. You have to slide your head to the side to dodge a stray tooth flying in your direction. A wiry man with darting eyes and greasy hair stops you. "Y' fixin' a chick, wan'?" Would you like to take a bet? He asks.
+The Pub of St. Liberty
+TheBlueOverhang
+Place a bet on the Rok'Za
+Place a bet one of the men
+Explain that you're not interested, and ask about Kaldun.
+Null
+Null
+66
+68
+69
+Heart - 3 Item 5 + 1
+Null
+70
+Heart + 3 Item 6 + 1
+Null
+76
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+68
+The homeless man's drunken eyes brighten, showing brilliant blue irises, "You're one of the good ones." In a surprise, the man flicks a gold coin at you, which you catch reflexively. When you look back he simply meets your gaze with a wink and moves to the next person, begging for silver. You enter the pub slightly perplexed, yet smiling at the righteous feeling in your gut despite the hunger there.                Heart Grows               In the center of the pub's main room is a fighting ring in the form of a sandpit encircled with fist-sized stones. They all have runic symbols similar to the ones on the rolled-up length of leather your hooded patron gave you. Around this center are tables and roaring on-lookers in their seats. Meat bags are held in every odd lap and there's not a sober face in the circle. On the fringes are barmaids bringing rounds and recording bets. A bar to the offhand right sits under a burly tender with eyes in constant flame. The red shade of it matches a string of runes on his neck, but it's clear that he's the exception. Styx folk despise soul-magic practiced by the Devils to the South, and the tattooed runes are the trademark of their handiwork. So the tender either has the right favors or the right friends to be anywhere near the Styx, let alone a tender at a pub this rowdy. You can't throw a stone in the Styx without finding some poor bastard who lost their only love to a soul contract turn tits up. Speaking of which, taking a few steps closer to the center of the room, you see a full-fledged Rok'Za Red Devil in the ring. He's surrounded by three massive men, probably fixed to be a beat-down rather than a real match. This is probably some bastardization of the fighting pits the Rok'Za love to run. They must've underestimated the fighting spirit of a full-grown Rok'Za because the 8-foot-tall behemoth flings off a 6-foot man with a single arm as you approach. He'll likely tear the three of them to pieces. Like a shock through a rail fence, the circle of on-lookers wails out in time with a massive blow from the Rok'Za's fist against the biggest man's face. You have to slide your head to the side to dodge a stray tooth flying in your direction. A wiry man with darting eyes and greasy hair stops you. "Y' fixin' a chick, wan'?" Would you like to take a bet? He asks.
+The Pub of St. Liberty
+TheBlueOverhang
+Place a bet on the Rok'Za
+Place a bet one of the men
+Explain that you're not interested, and ask about Kaldun.
+Null
+Null
+67
+69
+69
+Heart - 3 Item 5 + 1
+Null
+70
+Heart + 3 Item 6 + 1
+Null
+76
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+69
+The greasy man looks you over a minute as if he can read something on your face. He writes down your bet with a suck of his teeth. Once the last character is jotted down on a bar napkin, he spits at your feet as casually as he'd breathe, and thumbs you over to the burly bartender. "Tha' Swick' ova there owe the Meno'.'" That marked one knows Kaldun.          Item Gained: A Bet on a Devil              Heart Weakened                   The tender turns his torch eyes on you. His sockets are wells of flame, but its more the shift of his shoulders and the clenching of his jaw that imply you've caught his attention. You can tell he expects a fight at all times and he's well equipped enough in a fight that none of the shouting Styx folk consider testing that fact so much anymore. "Get you something?" He asks.
+The Gamble of St. Liberty
+Null
+Ask about Khaldun
+Ask about the Empty Eyes Revolt
+Ask about the Styxers
+Ask about the Tender
+Ask about the Fight going on right now
+68
+70
+73
+Null
+Null
+74
+Null
+Null
+75
+Null
+Null
+76
+Null
+Null
+77
+Null
+Null
+70
+The greasy man looks you over a minute as if he can read something on your face. He writes down your bet with a suck of his teeth. Once the last character is jotted down on a bar napkin, he claps you on the back with a filthy smile. "Good on ya', Tha' Swick' ova there owe the Meno'." The greasy man looks you over a minute as if he can read something on your face, before shrugging his wiry shoulders and pointing over to the burly bartender. "Tha' Swick' ova there owe the Meno'." That marked one knows Kaldun.         Item Gained: A Bet on an Underdog            Heart Grows               The tender turns his torch eyes on you. His sockets are wells of flame, but its more the shift of his shoulders and the clenching of his jaw that imply you've caught his attention. You can tell he expects a fight at all times and he's well equipped enough in a fight that none of the shouting Styx folk consider testing that fact so much anymore. "Get you something?" He asks.
+The Gamble of St. Liberty
+Null
+Ask about Khaldun
+Ask about the Empty Eyes Revolt
+Ask about the Styxers
+Ask about the Tender
+Ask about the Fight going on right now
+69
+71
+72
+Null
+Null
+73
+Null
+Null
+74
+Null
+Null
+75
+Null
+Null
+76
+Null
+Null
+71
+The tender turns his torch eyes on you. His sockets are wells of flame, but its more the shift of his shoulders and the clenching of his jaw that imply you've caught his attention. You can tell he expects a fight at all times and he's well equipped enough in a fight that none of the shouting Styx folk consider testing that fact so much anymore. "Get you something?" He asks.
+The Gamble of St. Liberty
+Null
+Ask about Khaldun
+Ask about the Empty Eyes Revolt
+Ask about the Styxers
+Ask about the Tender
+Ask about the Fight going on right now
+70
+72
+72
+Null
+Null
+73
+Null
+Null
+74
+Null
+Null
+75
+Null
+Null
+76
+Null
+Null
+72
+The fire-eyed tender lets out a low whistle, "That ain't a man worth asking much about. Most don't know what he looks like, less know what his real name is, but everyone knows he's a good friend to have an' a bastard to have against you." He waves a hand over the crowd dismissively, "This is his bunch. The grunts at least."
+"King" Kaldun
+Justice
+Tell him you're here to see Kaldun
+Ask about something else
+Null
+Null
+Null
+71
+73
+77
+Null
+Null
+71
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+73
+He crosses his arms, looking your face over with vague doubt, "You're an awful fresh 'n, huh? Any ring past the 5th, which means the 6th and 7th, are the Styx. Every John, Jane or Junkie who defaults on a contract with the Basilisks gets kicked into the Styx. Strictly Empty Eye territory, the Revolt gives just enough trouble to make settling the outer rings more trouble then their worth, but not so much that their seen as a real threat. Most inner-ringers see the Styxers as backwater rejects. They're a joke but their good to push meat-bags, nectar and the occasional contract on if they ain't tainted or broke."
+The Styxers
+TheDevil
+Tell him you're here to see Kaldun
+Ask about something else
+Null
+Null
+Null
+72
+74
+77
+Null
+Null
+71
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+74
+"Oh." He says, nodding over to the pit at the center of the room, "That? Well, the big bastard walked down the wrong street. Them three cornered him and demanded a toll for the mistake. Big fucker spit at their feet. Boys challenged him to Cur, the mortal bout." The tender chuckles wryly, "If that fucker beats those three, he gets to walk out and go about his business. Them three will be dead by then, an' we'll be back to our unhappy status-quo."
+Ask About The Match Going On
+RedArcana
+Tell him you're here to see Kaldun
+Ask about something else
+Null
+Null
+Null
+73
+75
+77
+Null
+Null
+71
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+75
+The tender snorts a chuckle, "Me?" He asks. "Marked Folk ain't allowed names in the Styx so I don't have one to give. I'm born and raised in the 6th, though. 'Bout the only reason my face ain't kicked in on a daily basis. I don't trust anyone since I sold my eyes for the love of a Siren. Damn bitch worked for the fucker. I could give more of a sob-story if it'd make you drop a tip?"
+Ask About The Tender
+BlueDevil
+Tell him you're here to see Kaldun
+Ask about something else
+Null
+Null
+Null
+74
+76
+77
+Null
+Null
+71
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+76
+The tender lets out a pained sigh, "That's a long story, that one." He sucks his teeth, "Best I could put it is that back in the day, when the Devils were still under the Knight's thumb in the slum, "King" Kaldun and his two blood brothers saw the scent of slaughter in the air. They saw what they were doing, the favors they were buying and just how many..." The tender coughs, his face hinting at an unspoken joke, "stupid saps bought into the contracts, their promise of power, and got their own tats for the sake of it. "Anyway, they set up an all human resistance in the 3rd ring, about where the Grand Bazaar frequents now. Massive turf war went down, "King" lost his two brothers and took what was left of the Empty eyes out as far as he could. He pulled a trick to make them disappear and to this day the Devils can't figure out how."
+The Empty Eyes Revolt
+Judgement
+Tell him you're here to see Kaldun
+Ask about something else
+Null
+Null
+Null
+75
+77
+77
+Null
+Null
+71
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+77
+You see the tender's eyes flicker off to something across the room. His eyes are back on you before you have time to make out exactly where or what caught his attention.
+A Familiar Face
+Null
+Kindness comes back to you
+Look who karma brought back
+Null
+Null
+Null
+76
+78
+78
+Null
+Heart + 5
+79
+Null
+Heart - 5
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+78
+The odd friendly grin on his face darkens into his lips forming a thin line. He leans over the bar, but before he can speak, a man falls into the seat next to you. It's the homeless man from earlier. A wide grin sits on his face as he turns to you, looping an arm over your shoulder. "Aye, Carter, a round for the drifter n' I. The usual." he says. Carter works his hands behind the bar. He passes a look between the two of you, "So, what brings you off the street, Mac?" "Ah, nothin' much, just heard some birds." Mac says. "Hm." Carter places a set of cocktails on the bar. If he expects payment, he doesn't show it. "Your drinks." He nods to the homeless man, "If you need me, call." The Devil walks off and pushes through a door to the back of house. Mac takes a sip of his martini, savoring the taste before turning back to you. "If I heard right, you want to see Khaldun." It's more a statement than a question.
+A Familiar Face
+Null
+(In Progress)Tell him he misheard and walk away. You'll have to choose another Bo
+Ask why you should tell him what you're here for.
+Null
+Null
+Null
+77
+79
+78
+Null
+Null
+80
+Null
+Heart + 5
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+79
+The odd friendly grin on his face darkens into his lips forming a thin line. He leans over the bar, speaking in a low voice, "Kid, are you sure you want-" A man falls into the seat next to you. It's the homeless man from earlier. His face is drawn back in a grimace at the sight of you as if you smell as bad as he does. Actually, no, he looks at you like you smell worse. "Aye, Carter, what's this drifter lookin' for?" he asks. The tender scratches the side of his face a moment, "Sounds like they's looking to speak to Khaldun." He nods over to you, "That right?"
+A Familiar Face
+Null
+(In Progress)Tell him he misheard and walk away. You'll have to choose another Bo
+Ask why you should tell him what you're here for.
+Null
+Null
+Null
+78
+80
+79
+Null
+Null
+81
+Null
+Heart - 5
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+80
+Mac scratches the stubble of his neck, thinking a moment, "You have anything to offer the man? Proof of commitment and all that."
+Joining the Empty Eyes
+Null
+Present the rolled up leather scroll
+Tell him you do, but don't show him the scroll
+Take your winnings and leave.
+Null
+Null
+79
+81
+82
+Null
+Heart + 5 Item 4 + 1
+82
+Null
+Heart + 5 Item 4 + 1
+82
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+81
+The Homeless man scoffs at the thought. "I've been watching you, Exile. You don't make the cut." Mac downs his drink and slides off of his seat. He bustles out of the bar without a word. The Pit boss eases into the bar next to you, watching Mac go. He slowly shakes his head, "Guess that's that. Ya can hang around here or find your way out. But I've got the results of the fight if'n you found your interest."
+Joining The Empty Eyes
+Null
+Present the rolled up leather scroll
+Tell him you do, but don't show him the scroll
+Take your winnings and leave.
+Null
+Null
+80
+82
+82
+Null
+Heart + 5 Item 4 + 1
+82
+Null
+Heart + 5 Item 4 + 1
+82
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+82
+He shrugs his massive shoulders. "I seen it all."               (The End for now. Share your support for the project if you want to find out more devilish paths you can traverse. Devils and Basilisks, an order of faceless nuns, and dozens of other delights)
+Burning Indifference
+Null
+Null
+Null
+Null
+Null
+Null
+81
+83
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
+Null
